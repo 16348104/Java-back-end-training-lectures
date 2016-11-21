@@ -6,16 +6,7 @@
 
 1. unzip [ideaIU-15.0.6.win.zip](https://confluence.jetbrains.com/display/IntelliJIDEA/Previous+IntelliJ+IDEA+Releases) to your-idea-install-folder
 
-2. 修改 Idea 配置文件 your-idea-install-folder/bin/idea.properties
-
-  ```
-  idea.config.path=your-idea-properties-folder/config
-  idea.system.path=your-idea-properties-folder/system
-  idea.plugins.path=${idea.config.path}/plugins
-  idea.log.path=${idea.system.path}/log
-  ```
-
-3. 修改两处配置
+2. 修改两处配置
 
   ```
   Idea > File > Settings... > Keymap
