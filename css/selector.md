@@ -81,7 +81,7 @@
     
 ## 伪类 `pseudo-class`
 
-> A pseudo-class is used to define a special state of an element.
+> A pseudo-class is used to define a special **state** of an element.
 
 - 锚点的 LoVe - HeAt
     
@@ -97,8 +97,8 @@
   - `:disabled`
   - `:empty`
   - `:enabled`
-  - `:first-child`
-  - `:first-of-type`
+  - `:first-child` - Selects every elements that is the first **child** of its parent
+  - `:first-of-type` - Selects every elements that is the first **type** of its parent
   - `:focus`
   - `:hover`
   - `:in-range`
@@ -126,12 +126,10 @@
     
 ## 伪元素 `pseudo-element`
 
-> A CSS pseudo-element is used to style specified parts of an element.
+> A CSS pseudo-element is used to style specified **parts** of an element.
 
   - `::before`
   - `::after`
   - `::first-letter`
   - `::first-line`
   - `::selection`
-
-
