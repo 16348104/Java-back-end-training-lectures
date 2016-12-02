@@ -87,8 +87,31 @@
     - btn `.dropdown-toggle` `data-toggle="dropdown"`
       - span `.caret`
     - ul `.dropdown-menu` `role="menu"`
-10. Glyphicons `字体图标` span `.glyphicon .glyphicon-*`
-11. Badges/Labels `徽章、标签` `.badeg` `.label-default, .label-primary, .label-success, .label-info, .label-warning .label-danger`
+
+      ```html
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary">Apple</button>
+        <button type="button" class="btn btn-primary">Samsung</button>
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Sony <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Tablet</a></li>
+            <li><a href="#">Smartphone</a></li>
+          </ul>
+        </div>
+      </div>
+      ```
+      
+10. Glyphicons `字体图标`
+   - span 
+      - `.glyphicon` 
+      - +`.glyphicon-*`
+11. Badges/Labels `徽章、标签` 
+  - span 
+      - `.badge` 
+      - +`.label-default, +.label-primary, .label-success, .label-info, .label-warning .label-danger`
 12. Progress Bars `.progress` `.progress-bar` `style="width: 12%;"` 
 13. Pagination ul `.pagination` `.active` `.disabled` `.pagination-lg` `.pagination-sm` ul `.breadcrumb`
 14. Pager ul `.pager` li `.previous` `.next`
