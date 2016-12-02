@@ -108,12 +108,22 @@
    - span 
       - `.glyphicon` 
       - +`.glyphicon-*`
-11. Badges/Labels `徽章、标签` 
-  - span 
-      - `.badge` 
+11. Badges/Labels `徽章` `标签` 
+  - badge span 
+      - `badge`
+  - label span
+      - `.label` 
       - +`.label-default, +.label-primary, .label-success, .label-info, .label-warning .label-danger`
-12. Progress Bars `.progress` `.progress-bar` `style="width: 12%;"` 
-13. Pagination ul `.pagination` `.active` `.disabled` `.pagination-lg` `.pagination-sm` ul `.breadcrumb`
+12. Progress Bars 
+  - outer div `.progress` 
+  - inner div `.progress-bar` `style="width: 12%;"` 
+13. Pagination 
+  - ul 
+      - `.pagination` `.pagination-lg` `.pagination-sm` 
+  - ul 
+      - `.breadcrumb`
+  - li
+      - `.active` `.disabled`
 14. Pager ul `.pager` li `.previous` `.next`
 15. List Groups ul/div `.list-group` li/a `.list-group-item .list-group-item-*` `.active` `.disabled`
 16. Panels `面板` `.panel` `.panel-*` `.panel-headind` `.panel-body` `.panel-footer` `.panel-group`
