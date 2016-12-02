@@ -119,24 +119,47 @@
   - inner div `.progress-bar` `style="width: 12%;"` 
 13. Pagination 
   - ul 
-      - `.pagination` `.pagination-lg` `.pagination-sm` 
+      - `.pagination` +`.pagination-lg` +`.pagination-sm` 
       - li
-          - `.active` `.disabled`
+          - +`.active` +`.disabled`
   - ul 
       - `.breadcrumb`
 14. Pager 
   - ul
       - `.pager` 
   - li
-      - `.previous` `.next`
+      - +`.previous` +`.next`
 15. List Groups 
   - ul / div 
       - `.list-group` 
   - li / a 
-      - `.list-group-item` `.list-group-item-*` `.active` `.disabled`
-16. Panels `面板` `.panel` `.panel-*` `.panel-headind` `.panel-body` `.panel-footer` `.panel-group`
-17. Dropdowns `下拉菜单` div `.dropdown` li `divider` `dropdown-header`
-  - `caret`
+      - `.list-group-item` +`.list-group-item-*` +`.active` +`.disabled`
+16. Panels `面板` 
+  - 1st div
+      - `.panel-group`  
+  - 2nd div
+      - `.panel` +`.panel-*`
+  - 3rd div
+      -  +`.panel-headind` +`.panel-body` +`.panel-footer` 
+17. Dropdowns `下拉菜单` 
+  - div
+      - `.dropdown` 
+  - li
+      - +`divider`
+      - +`dropdown-header`
+
+  ```html
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+    </ul>
+  </div>
+  ```
+
 18. Collapse `折叠板` `data-toggle="collapse"` `data-target="#demo"` `.collapse` `.in`
   - Accordion `手风琴` `.panel-group` `data-parent="#demo"` `.panel-collapse`
 19. Tabs/Pills `list-inline` `nav` `nav-tabs` `nav-pills` `nav-stacked` `nav-justified` 
