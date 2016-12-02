@@ -25,11 +25,11 @@
   - **Responsive Tables** div  `.table-responsive`
 4. Images `.img-rounded` `.img-circle` `.img-thumbnail`
   - **Responsive Images** `.img-responsive`
-  - **Responsive Embeds** `.embed-responsive` `.embed-responsive-16by9` `.embed-responsive-4by3` `.embed-responsive-item` 
-    - iframe
-    - embed
-    - video
-    - object
+  - **Responsive Embeds** 
+    - div 
+        - `.embed-responsive` `.embed-responsive-16by9` `.embed-responsive-4by3` 
+    - iframe embed video object
+        - `.embed-responsive-item`  
 5. Jumbotron `超大屏幕 - 巨幕` `.jumbotron`
   - inside container
   - outside container
