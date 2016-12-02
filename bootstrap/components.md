@@ -43,12 +43,12 @@
     - div +`alert-dissmissible` +`fade` +`in`
     - a `.close` `data-dismiss="alert"`
     
-    ```html
-    <div class="alert alert-success alert-dismissable">
-        <a href="#" class="close" data-dismiss="alert">&times;</a>
-        <strong>Success!</strong> a successful or positive action.
-    </div>
-    ```
+      ```html
+      <div class="alert alert-success alert-dismissable">
+          <a href="#" class="close" data-dismiss="alert">&times;</a>
+          <strong>Success!</strong> a successful or positive action.
+      </div>
+      ```
     
 8. Buttons `.btn`
   - styles
