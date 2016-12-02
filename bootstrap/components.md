@@ -21,7 +21,7 @@
   - pre
   - `.text-muted`, `.text-primary`, `.text-success`, `.text-info`, `.text-warning`, `.text-danger`
   - `.bg-primary`, `.bg-success`, `bg-info`, `bg-warning`, `.bg-danger`
-3. Tables `.table` `.table-striped` `.table-borderd` `.table-hover` `.table-condensed`
+3. Tables `.table` +`.table-striped` +`.table-borderd` +`.table-hover` `.table-condensed`
   - **Responsive Tables** div  `.table-responsive`
 4. Images `.img-rounded` `.img-circle` `.img-thumbnail`
   - **Responsive Images** `.img-responsive`
@@ -33,7 +33,7 @@
 5. Jumbotron `超大屏幕 - 巨幕` `.jumbotron`
   - inside container
   - outside container
-6. Wells `浅容器` `.well` `.well-sm` `well-lg`
+6. Wells `浅容器` div `.well` +`.well-sm` +`well-lg`
 7. Alerts div `.alert` `.alert-success` `.alert-info` `.alert-warning` `.alert-danger` `fade` `in` `out`
   - **Closing Alerts**
     - a `.close` `data-dismiss="alert"`
