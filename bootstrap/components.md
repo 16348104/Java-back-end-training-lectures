@@ -76,10 +76,12 @@
         
 9. Button Groups 
   - `.btn-group`
-  - `.btn-group-lg`
-  - `.btn-group-xs`
-  - `.btn-group-vertical`
-  - `.btn-gropu-justified`
+  - +`.btn-group-lg`
+  - +`.btn-group-md`
+  - +`.btn-group-sm`
+  - +`.btn-group-xs`
+  - +`.btn-group-vertical`
+  - +`.btn-gropu-justified`
   - Dropdown Menus 
     - btn `.dropdown-toggle` `data-toggle="dropdown"`
       - span `.caret`
