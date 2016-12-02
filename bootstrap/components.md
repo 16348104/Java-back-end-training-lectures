@@ -110,7 +110,7 @@
       - +`.glyphicon-*`
 11. Badges/Labels `徽章` `标签` 
   - badge span 
-      - `badge`
+      - `.badge`
   - label span
       - `.label` 
       - +`.label-default, +.label-primary, .label-success, .label-info, .label-warning .label-danger`
