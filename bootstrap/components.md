@@ -108,7 +108,7 @@
    - span 
       - `.glyphicon` 
       - +`.glyphicon-*`
-11. Badges/Labels `徽章` `标签` 
+11. Badges / Labels `徽章` `标签` 
   - badge span 
       - `.badge`
   - label span
@@ -124,8 +124,16 @@
           - `.active` `.disabled`
   - ul 
       - `.breadcrumb`
-14. Pager ul `.pager` li `.previous` `.next`
-15. List Groups ul/div `.list-group` li/a `.list-group-item .list-group-item-*` `.active` `.disabled`
+14. Pager 
+  - ul
+      - `.pager` 
+  - li
+      - `.previous` `.next`
+15. List Groups 
+  - ul / div 
+      - `.list-group` 
+  - li / a 
+      - `.list-group-item` `.list-group-item-*` `.active` `.disabled`
 16. Panels `面板` `.panel` `.panel-*` `.panel-headind` `.panel-body` `.panel-footer` `.panel-group`
 17. Dropdowns `下拉菜单` div `.dropdown` li `divider` `dropdown-header`
   - `caret`
