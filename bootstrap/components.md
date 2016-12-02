@@ -120,10 +120,10 @@
 13. Pagination 
   - ul 
       - `.pagination` `.pagination-lg` `.pagination-sm` 
+      - li
+          - `.active` `.disabled`
   - ul 
       - `.breadcrumb`
-  - li
-      - `.active` `.disabled`
 14. Pager ul `.pager` li `.previous` `.next`
 15. List Groups ul/div `.list-group` li/a `.list-group-item .list-group-item-*` `.active` `.disabled`
 16. Panels `面板` `.panel` `.panel-*` `.panel-headind` `.panel-body` `.panel-footer` `.panel-group`
