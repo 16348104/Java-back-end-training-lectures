@@ -34,9 +34,22 @@
   - inside container
   - outside container
 6. Wells `浅容器` div `.well` +`.well-sm` +`well-lg`
-7. Alerts div `.alert` `.alert-success` `.alert-info` `.alert-warning` `.alert-danger` `fade` `in` `out`
+7. Alerts 
+  - div 
+    - `.alert` +`.alert-success` +`.alert-info` +`.alert-warning` +`.alert-danger`
+  - link in alert
+    - a `.alert-link`
   - **Closing Alerts**
+    - div +`alert-dissmissible` +`fade` +`in`
     - a `.close` `data-dismiss="alert"`
+    
+    ```html
+    <div class="alert alert-success alert-dismissable">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong>Success!</strong> a successful or positive action.
+    </div>
+    ```
+    
 8. Buttons `.btn`
   - styles
  
