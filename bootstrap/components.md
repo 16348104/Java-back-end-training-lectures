@@ -104,7 +104,7 @@
       </div>
       ```
       
-10. Glyphicons `字体图标`
+10. Glyphicons `[ɡlɪf]` `字体图标`
    - span 
       - `.glyphicon` 
       - +`.glyphicon-*`
