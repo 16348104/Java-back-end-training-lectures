@@ -82,6 +82,7 @@
   - +`.btn-group-xs`
   - +`.btn-group-vertical`
   - +`.btn-gropu-justified`
+    - `button` wrap diw .btn-group
   - Dropdown Menus 
     - btn `.dropdown-toggle` `data-toggle="dropdown"`
       - span `.caret`
