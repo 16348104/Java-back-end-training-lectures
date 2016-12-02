@@ -81,8 +81,8 @@
   - +`.btn-group-sm`
   - +`.btn-group-xs`
   - +`.btn-group-vertical`
-  - +`.btn-gropu-justified`
-    - `button` wrap diw .btn-group
+  - +`.btn-group-justified`
+    - **each** `button` wrap div with .btn-group class
   - Dropdown Menus 
     - btn `.dropdown-toggle` `data-toggle="dropdown"`
       - span `.caret`
