@@ -366,7 +366,8 @@
     - 条件运算符 `Conditional operator`
         - (condition)?(ture value):(false value) 三目运算符
     - 其他运算符 `Misc operators`
-        - `(`类型`)` 强制类型转换
+        - `(`类型`)` 强制类型转换 `cast`
+          - 强制类型转换有风险
           - `Java` 合法类型转换
             
             > `——` 无信息丢失
