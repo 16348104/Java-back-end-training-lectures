@@ -345,7 +345,8 @@
         - ^
         - ~
         - <<
-        - &gt;&gt;
+        - &gt;&gt; 
+        - &gt;&gt; `zero fill`
     - 赋值类运算符 `Assignment operators`
         - =
         - +=
