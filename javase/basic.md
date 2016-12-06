@@ -350,6 +350,9 @@
         - &gt;&gt; 
             - positive `0 fill`
             - negative `1 fill`
+         
+         > 二进制正负转换：取反加一
+         
     - 赋值类运算符 `Assignment operators`
         - =
         - +=
