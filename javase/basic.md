@@ -367,6 +367,22 @@
         - (condition)?(ture value):(false value) 三目运算符
     - 其他运算符 `Misc operators`
         - `(`类型`)` 强制类型转换
+          - `Java` 合法类型转换
+            
+            > `——` 无信息丢失
+
+            > `---` 可能有精度损失
+
+            ```
+            char —— int
+            byte —— short —— int
+            int —— long
+            int —— double
+            int --- float
+            long --- float
+            long --- float
+            ```
+            
         - `.` 引用
         - `[]` 数组
         - `()` 改变运算优先级，推荐使用
