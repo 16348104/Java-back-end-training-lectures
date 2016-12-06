@@ -339,7 +339,13 @@
                 ||
                 第一个表达式即可确定运算结果时，不再判断第二个表达式
                 使用短路规则与否，可能副作用不同
-    - ~~位运算符~~ `Bitwise operators`
+    - 位运算符 `Bitwise operators`
+        - &
+        - |
+        - ^
+        - ~
+        - <<
+        - &gt;&gt;
     - 赋值类运算符 `Assignment operators`
         - =
         - +=
