@@ -360,9 +360,12 @@
         - *=
         - /=
         - %=
-        - &= 针对布尔值
-        - |= 针对布尔值
-        - ^= 针对布尔值
+        - &= 针对布尔值或定点类型值
+        - |= 针对布尔值或定点类型值
+        - ^= 针对布尔值或定点类型值
+        - <<=
+        - &gt;&gt;=
+        - &gt;&gt;&gt;=
     - 条件运算符 `Conditional operator`
         - (condition)?(ture value):(false value) 三目运算符
     - 其他运算符 `Misc operators`
