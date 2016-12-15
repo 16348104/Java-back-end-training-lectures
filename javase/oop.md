@@ -281,8 +281,24 @@
         - 注意：String类型以及基本数据类型的封装类是特例（还是值传递）
           - String `immutable`
           - primitive Wrapper
-12. *`内部类`*
-
+12. 内部类
+    - 成员内部类
+        - 在外部类内部直接定义（不在方法内部或代码块内部）的类就是成员式内部类，它可以直接使用外部类的所有变量和方法，即使是 private 的。外部类要想访问内部类的成员变量和方法，则需要通过内部类的对象来获取。
+        
+        ```java
+        public class Outer{
+            private int size;
+            public class Inner {
+                public void dostuff() {
+                    size++;
+                }
+            }
+            public void testTheInner() {
+                Inner in = new Inner();
+                in.dostuff();
+            }
+        }weixueyuanview6007
+        ```
  
 
 
