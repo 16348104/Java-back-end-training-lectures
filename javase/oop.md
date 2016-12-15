@@ -273,11 +273,14 @@
         - 方法中的改变不影响实际参数 `references`
     - “引用传递”
         - 传递参数的地址（也是值传递）
+          
+          > [Is Java “pass-by-reference” or “pass-by-value”?](http://stackoverflow.com/a/12429953)
+          
         - 方法的参数是引用数据类型
         - 方法中的改变会影响实际参数
         - 注意：String类型以及基本数据类型的封装类是特例（还是值传递）
           - String `immutable`
-          - primitive Wrapper [Why this method does not change Integer value?](http://stackoverflow.com/questions/16061970/why-this-method-does-not-change-integer-value)
+          - primitive Wrapper
 12. *`内部类`*
 
  
