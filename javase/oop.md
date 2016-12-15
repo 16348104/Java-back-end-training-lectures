@@ -257,8 +257,7 @@
             - 抽象类可以定义具体方法，接口不能
             - 类只能继承一个抽象类，可以实现多个接口
     - 接口本身可以继承 `extends` 多个父接口
-10. *`内部类`*
-11. 变量作用域范围
+10. 变量作用域范围
     - 变量（方法）产生作用的有效范围
       - 类作用域范围
           - 类的起始 `{` 到类的终止 `}`
@@ -267,7 +266,7 @@
           - 从变量声明之处，到当前块结束之处
           - 方法中的局部变量 `local variable`，方法的参数，循环的变量
     - 方法内的局部变量可以覆盖同名的域
-12. 参数传递方式
+11. 参数传递方式
     - 值传递
         - 传递参数的值
         - 方法的参数是基本数据类型 `primitives`
@@ -279,6 +278,7 @@
         - 注意：String类型以及基本数据类型的封装类是特例（还是值传递）
           - String `immutable`
           - primitive Wrapper [Why this method does not change Integer value?](http://stackoverflow.com/questions/16061970/why-this-method-does-not-change-integer-value)
+12. *`内部类`*
 
  
 
