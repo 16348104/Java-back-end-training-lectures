@@ -32,6 +32,7 @@
    * [数据流与文件](javase/io.md)
    * [练习题](javase/exercise.md)
    * [附1.序列化](javase/serializable.md)
+   * [附2.基础类库](javase/api.md)
 * [JavaScript](javascript/README.md)
    * [引言](javascript/intro.md)
    * [练习题](javascript/exercise.md)
