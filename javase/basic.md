@@ -17,6 +17,8 @@
         - `switch`/`case` 中 `default` 后要写 `break`
         - `if` 后语句体只有一个，也要写`{}`
         
+        > [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
+        
     - 关键字
         - 被 Java 语言占用的一些单词，不能作为标志符
         
