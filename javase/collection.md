@@ -66,6 +66,7 @@
         - delete
         - insert
         - reverse
+        - setCharAt
     - `StringBuilder`
 3. 向量 `java.util.Vector`
     - `Vector` 的重要方法
