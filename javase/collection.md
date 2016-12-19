@@ -59,6 +59,7 @@
         - toCharArray
         - toLowerCase
         - toUpperCase
+        - trim
         - valueOf
     - 字符串缓冲区 `java.lang.StringBuffer`
         - append
