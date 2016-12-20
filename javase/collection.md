@@ -73,6 +73,7 @@
         - add
         - get
         - size
+        - capacity
         - clear
 4. 哈希表 `java.util.Hashtable`
     - `Hashtable` 中 `key` 是唯一的
@@ -80,6 +81,7 @@
         - put
         - get
         - size
+        - remove
         - clear
         - keySet
 
