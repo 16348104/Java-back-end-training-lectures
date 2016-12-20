@@ -2,7 +2,7 @@
 
 > Java Back-End 201601
 
-####  <center>第X周</center>
+####  <center>第0周</center>
 
 `2016.12.12 - 2016.12.18`
 
@@ -22,7 +22,27 @@
 
 > Java Back-End 201601
 
-####  <center>第三周</center>
+####  <center>第一周</center>
+
+`2016.12.5 - 2016.12.11`
+
+|时间|内容|备注|
+|-:|-|:-|
+|周一|Java 引言<br>环境配置<br>集成开发环境设置<br>Git / Github 基础||
+|周二|Java 基础语法<br>标识符和关键字<br>数据类型、直接量和变量<br>||
+|周三|Java 基础语法<br>运算符<br>练习题||
+|周四|Java 基础语法<br>控制结构<br>练习题||
+|周五|习题课||
+|周六|作业||
+|周日|作业|-|
+
+<div style="page-break-after: always;"></div>
+
+# 每周计划
+
+> Java Back-End 201601
+
+#### <center>第二周</center>
 
 `2016.12.12 - 2016.12.18`
 
@@ -42,10 +62,9 @@
 
 > Java Back-End 201601
 
-####  <center>第四周</center>
+####  <center>第三周</center>
 
 `2016.12.19 - 2016.12.25`
-
 
 |时间|内容|备注|
 |-:|-|:-|
