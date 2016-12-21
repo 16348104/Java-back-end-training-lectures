@@ -117,7 +117,7 @@
   ![ArrayList](../image/javase/diagram/ArrayList.png)
   
   - **add**
-  - addAll
+  - **addAll**
   - **size**
   - clear
   - contains
@@ -132,6 +132,14 @@
   - toArray
   - trimToSize
   
+  > extended methods
+  
+  - iterator
+  - listIterator
+  - subList
+  - containsAll
+  - removeAll
+  - retainAll
   
 - `LinkedList`
   
