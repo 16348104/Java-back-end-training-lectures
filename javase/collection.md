@@ -112,9 +112,26 @@
   
   ![Vector](../image/javase/diagram/Vector.png)
   
-- `ArrayList`
+- **`ArrayList`**
   
   ![ArrayList](../image/javase/diagram/ArrayList.png)
+  
+  - **add**
+  - addAll
+  - **size**
+  - clear
+  - contains
+  - **get**
+  - indexOf
+  - isEmpty
+  - lastIndexOf
+  - remove
+  - removeRange
+  - set
+  - **size**
+  - toArray
+  - trimToSize
+  
   
 - `LinkedList`
   
