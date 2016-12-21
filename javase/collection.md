@@ -139,6 +139,7 @@
   - subList
   - containsAll
   - removeAll
+  - removeIf
   - retainAll
   
 - `LinkedList`
