@@ -180,7 +180,7 @@
 
 - `HashSet`
 
-  > 使用 `Hashtable` 存储元素
+  > 使用 `HashMap` 存储元素
 
   > 无序
 
@@ -190,7 +190,7 @@
   
 - `LinkedHashSet`
 
-  > 使用 `Hashtable` 实现
+  > 使用 `HashMap` 实现
 
   > 按元素添加顺序排序
   
