@@ -36,7 +36,13 @@
     > 字符串初始化后，其值不能改变 `immutable`
 
     - `String` 的重要方法
-        - 构造方法
+    
+        > consturctors
+        
+          - 略
+          
+        > methods
+        
         - charAt
         - concact `concatenate` `[kɒn'kætɪneɪt]	`
         - contains
@@ -115,6 +121,14 @@
 - **`ArrayList`**
   
   ![ArrayList](../image/javase/diagram/ArrayList.png)
+  
+  > constructors
+  
+  - ArrayList()
+  - ArrayList(Collection<? extends E> c)
+  - **ArrayList(int initicalCapacity)**
+  
+  > methods
   
   - **add**
   - **addAll**
