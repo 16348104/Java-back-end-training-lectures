@@ -154,7 +154,7 @@
   - subList
   - containsAll
   - removeAll
-  - removeIf
+  - removeIf `JDK 1.8`
   - retainAll
   
 - `LinkedList`
