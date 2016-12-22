@@ -148,6 +148,7 @@
   
   > extended methods
   
+  - equals
   - iterator
   - listIterator
   - subList
