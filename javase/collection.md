@@ -135,6 +135,7 @@
   - **size**
   - clear
   - contains
+  - ensureCapacity
   - **get**
   - indexOf
   - isEmpty
