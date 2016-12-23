@@ -24,12 +24,6 @@
         > 注意每行列数不同的二维数组
         
     - 多维数组
-    - 常用方法
-      - `Arrays.fill()`
-      - `Arrays.copyOf()`
-      - `Arrays.sort()`
-      - `Arrays.toString()`
-      - `System.arraycopy()`
     
 2. 字符串 `java.lang.String`
     
@@ -263,45 +257,46 @@
 
 - 使用 Iterator 不能获得 index
 
-  > 使用 LIstIterator 可以在任何时刻取得 index，使用 nextIndex() 和 previousIndex() 方法
+  > 使用 ListIterator 可以在任何时刻取得 index，使用 `nextIndex` 和 `previousIndex` 方法
 
-- 使用 Iterator 遍历时不能添加元素，会抛出 ConcurrentModificationException 异常
+- 使用 Iterator 遍历时不能添加元素，会抛出 `ConcurrentModificationException` 异常
 
-  > 使用 ListIterator 遍历时可以添加元素
+  > 使用 ListIterator 遍历时可以使用 `add` 方法添加元素
 
 - 使用 Iterator 时不能替换元素
 
-  > 使用 ListIterator 可以使用 set() 方法替换元素
+  > 使用 ListIterator 可以使用 `set` 方法替换元素
 
 
 - Iterator 的常用方法
-  - hasNext()
-  - next()
-  - remove()
+  - hasNext
+  - next
+  - remove
 
 
 - ListIterator 的常用方法
-  - add(E e)
-  - hasNext()
-  - hasPrevious()
-  - next()
-  - nextIndex()
-  - previous()
-  - previousIndex()
-  - remove()
-  - set(E e)
+  - add
+  - hasNext
+  - hasPrevious
+  - next
+  - nextIndex
+  - previous
+  - previousIndex
+  - remove
+  - set
 
 ### Utils
 - `Collections`
-    - reverse()
-    - sort()
-    - singletonList() // compare with Arrays.asList()
+    - reverse
+    - sort
+    - singletonList // compare with Arrays.asList()
 - `Arrays`
-    - asList()
-    - binarySearch()
-    - copyOf()
-    - copyOfRange()
-    - equals()
-    - fill()
-    - sort()
-    - toString()
+    - asList
+    - binarySearch
+    - copyOf
+    - copyOfRange
+    - equals
+    - fill
+    - sort
+    - toString
+    - deepToString
