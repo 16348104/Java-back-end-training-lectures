@@ -41,7 +41,7 @@
             java.lang.Exception
                 java.lang.RuntimeException
                 java.io.IOException
-                java.*.*Exception
+                *.*.*Exception
     ```
 
     - 非受检异常 `unchecked exception`
