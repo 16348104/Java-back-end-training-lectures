@@ -289,7 +289,7 @@
    - 键盘录入一个需要被校验的验证码，如果输入的验证码在 data.txt 中存在：在控制台提示验证成功，如果不存在控制台提示验证失败
 9. 编程实现一个控制台打字测试，计算并输出正确率：
    
-   ![Type Test](../image/java/type_test.png)
+   ![Type Test](../image/javase/type_test.png)
    
 
 
