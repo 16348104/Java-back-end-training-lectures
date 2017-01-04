@@ -205,7 +205,11 @@
 4. mysql_connector version 5.1.13+
 
 6. jdbc.properties
-
-```
-jdbc.url=jdbc:mysql://127.0.0.1:3306/database?useUnicode=true&characterEncoding=utf8&autoReconnect=true&rewriteBatchedStatements=TRUE
-```
+  
+  ```
+  jdbc.url=jdbc:mysql://127.0.0.1:3306/database
+  ?useUnicode=true
+  &characterEncoding=utf8
+  &autoReconnect=true
+  &rewriteBatchedStatements=TRUE
+  ```
