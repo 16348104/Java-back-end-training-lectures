@@ -1,6 +1,6 @@
 # Chapter 2 数据库安装 / 设置
 
-> MySQL (mysql-5.6.30-win32.zip)
+> MySQL (mysql-5.6.35-win64.zip)
 
 1. upzip zip file to your_mysql_directory/
 
