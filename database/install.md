@@ -98,7 +98,7 @@
   mysql> source your_dump_file_name.sql
   ```
  
-## OS X
+## MAC OS X
  
 > MySQL tar.gz install in MAC yosemite 10.10.2
 
