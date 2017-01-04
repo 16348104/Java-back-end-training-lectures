@@ -124,23 +124,23 @@
 
 ### start / stop / restart / status
 
-> sudo support-files/mysql.server start
+1. sudo support-files/mysql.server start
 
-> sudo support-files/mysql.server restart
+2. sudo support-files/mysql.server restart
 
-> sudo support-files/mysql.server stop
+3. sudo support-files/mysql.server stop
 
-> sudo support-files/mysql.server status
+4. sudo support-files/mysql.server status
 
 ### mysql environment variable set
 
-1. vi ~/.bash_profile
+1. vi``` ```~/.bash_profile
 
-2. export PATH=${PATH}:/usr/local/mysql/bin
+2. export``` ```PATH=${PATH}:/usr/local/mysql/bin
 
-3. source ~/.bash_profile
+3. source``` ```~/.bash_profile
 
-4. echo $PATH
+4. echo``` ```$PATH
 
 ### utf8mb4 character
 
