@@ -1,5 +1,7 @@
 # Chapter 2 数据库安装 / 设置
 
+## Windows
+
 > MySQL (mysql-5.6.35-win64.zip)
 
 1. upzip zip file to your_mysql_directory/
@@ -95,14 +97,16 @@
   ```sql
   mysql> source your_dump_file_name.sql
   ```
-  
+ 
+## OS X
+ 
 > MySQL tar.gz install in MAC yosemite 10.10.2
 
 1. download mysql
 
     - [mysql-5.6.27-osx10.9-x86_64.tar.gz](http://mirrors.sohu.com/mysql/MySQL-5.6/mysql-5.6.27-osx10.9-x86_64.tar.gz)
     
-2. cd /Users/<YourName>/Downloads
+2. cd /Users/YourName/Downloads
 
 3. tar zxvf mysql-5.6.24-osx10.9-x86_64.tar.gz
 
@@ -118,7 +122,7 @@
 
 9. cd /usr/local/mysql
 
-## start / stop / restart / status
+### start / stop / restart / status
 
 > sudo support-files/mysql.server start
 
@@ -128,7 +132,7 @@
 
 > sudo support-files/mysql.server status
 
-## mysql environment variable set
+### mysql environment variable set
 
 1. vi ~/.bash_profile
 
@@ -138,7 +142,7 @@
 
 4. echo $PATH
 
-## utf8mb4 character
+### utf8mb4 character
 
 1. mysql 5.5.3+
 
