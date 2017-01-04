@@ -83,7 +83,7 @@
   SC delete your_mysql_service_name
   ```
 
-7. dump data
+8. dump data
      
   > cmd `your_mysql_directory/bin`
 
@@ -92,7 +92,7 @@
 
   ```
     
-8. import data
+9. import data
 
   ```sql
   mysql> source your_dump_file_name.sql
@@ -146,53 +146,62 @@
 
 1. mysql 5.5.3+
 
-2. alter
+2. Alter
 
-```sql
-ALTER DATABASE database_name CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
-ALTER TABLE table_name CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-ALTER TABLE table_name CHANGE column_name column_name VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-```
+  ```sql
+  ALTER DATABASE database_name 
+  CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
+  
+  ALTER TABLE table_name 
+  CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+  
+  ALTER TABLE table_name 
+  CHANGE column_name column_name VARCHAR(191) 
+  CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+  ```
+  
+3. sudo cp /usr/local/mysql/my.cnf /etc/my.cnf
 
-2. sudo cp /usr/local/mysql/my.cnf /etc/my.cnf
-
-```
-[client]
-default-character-set = utf8mb4
-
-[mysql]
-default-character-set = utf8mb4
-
-[mysqld]
-character-set-client-handshake = FALSE
-character-set-server = utf8mb4
-collation-server = utf8mb4_unicode_ci
-init_connect='SET NAMES utf8mb4'
-```
-
+  ```
+  [client]
+  default-character-set = utf8mb4
+  
+  [mysql]
+  default-character-set = utf8mb4
+  
+  [mysqld]
+  character-set-client-handshake = FALSE
+  character-set-server = utf8mb4
+  collation-server = utf8mb4_unicode_ci
+  init_connect='SET NAMES utf8mb4'
+  ```
+  
 3. check
 
-```sql
-SHOW VARIABLES WHERE Variable_name LIKE 'character_set_%' OR Variable_name LIKE 'collation%';
-``` 
-
-```
-+--------------------------+--------------------+
-| Variable_name            | Value              |
-+--------------------------+--------------------+
-| character_set_client    | utf8mb4            |
-| character_set_connection | utf8mb4            |
-| character_set_database  | utf8mb4            |
-| character_set_filesystem | binary            |
-| character_set_results    | utf8mb4            |
-| character_set_server    | utf8mb4            |
-| character_set_system    | utf8              |
-| collation_connection    | utf8mb4_unicode_ci |
-| collation_database      | utf8mb4_unicode_ci |
-| collation_server        | utf8mb4_unicode_ci |
-+--------------------------+--------------------+
-```
-
+  ```sql
+  SHOW VARIABLES 
+  WHERE Variable_name LIKE 'char%' 
+  OR 
+  Variable_name LIKE 'coll%';
+  ``` 
+  
+  ```
+  +--------------------------+--------------------+
+  | Variable_name            | Value              |
+  +--------------------------+--------------------+
+  | character_set_client     | utf8mb4            |
+  | character_set_connection | utf8mb4            |
+  | character_set_database   | utf8mb4            |
+  | character_set_filesystem | binary             |
+  | character_set_results    | utf8mb4            |
+  | character_set_server     | utf8mb4            |
+  | character_set_system     | utf8               |
+  | collation_connection     | utf8mb4_unicode_ci |
+  | collation_database       | utf8mb4_unicode_ci |
+  | collation_server         | utf8mb4_unicode_ci |
+  +--------------------------+--------------------+
+  ```
+  
 4. mysql_connector version 5.1.13+
 
 6. jdbc.properties
