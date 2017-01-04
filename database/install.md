@@ -4,7 +4,7 @@
 
 > MySQL (mysql-5.6.35-win64.zip)
 
-1. upzip zip file to your_mysql_directory/
+1. Unzip zip file to your_mysql_directory/
 
 2. Edit configuration file
 	
@@ -83,7 +83,7 @@
   SC delete your_mysql_service_name
   ```
 
-8. dump data
+8. Dump data
      
   > cmd `your_mysql_directory/bin`
 
@@ -92,7 +92,7 @@
 
   ```
     
-9. import data
+9. Import data
 
   ```sql
   mysql> source your_dump_file_name.sql
@@ -102,9 +102,9 @@
  
 > MySQL tar.gz install in MAC yosemite 10.10.2
 
-1. download mysql
+1. Download mysql
 
-    - [mysql-5.6.27-osx10.9-x86_64.tar.gz](http://mirrors.sohu.com/mysql/MySQL-5.6/mysql-5.6.27-osx10.9-x86_64.tar.gz)
+    > [mysql-5.6.27-osx10.9-x86_64.tar.gz](http://mirrors.sohu.com/mysql/MySQL-5.6/mysql-5.6.27-osx10.9-x86_64.tar.gz)
     
 2. cd /Users/YourName/Downloads
 
