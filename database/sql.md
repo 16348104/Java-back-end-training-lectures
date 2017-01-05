@@ -300,10 +300,11 @@ SELECT * FROM table_name;
   - SQL Foreign Key
     - 主表 父表（主键所在的表）
     - 从表 子表（外键所在的表）
-      - 必须引用主表主键
-      - 外键和主键数据类型一致
+    - 必须引用主表主键
+    - 外键和主键数据类型一致
+    
+    > [mySQL RESTRICT and NO ACTION](http://stackoverflow.com/a/5810024/3414180)
       
-
     ```
     [CONSTRAINT [symbol]] FOREIGN KEY
         [index_name] (index_col_name, ...)
