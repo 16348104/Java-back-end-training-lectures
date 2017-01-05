@@ -1,5 +1,32 @@
   # 附: 练习题
   
+  ## DDL 学生选课系统
+  
+   - 学生表
+     - id
+     - name
+     - age
+     - gender
+     - dob
+     - departmentId
+     
+   - 系别表
+     - id
+     - title `系名称`
+     - tel
+     
+   - 课程表
+     - id
+     - title `课程名称`
+     - credit `学分`
+   
+   - 选课表  
+     - id
+     - studentId
+     - departmentId
+     - grade `考试成绩`
+
+  
   ## Sample database structure
   
   > Table `emp` 员工表
