@@ -119,11 +119,6 @@ SELECT * FROM table_name;
 </table>
 
   2. Number types
-  
-    > `INT(size)` 
-  
-    > The size is just the display width, that is used when the field has ZEROFILL specified.  
-    
 <table>
     <tr>
       <th style="width:20%">Data type</th>
@@ -176,6 +171,10 @@ SELECT * FROM table_name;
     </tr>
 </table>
 
+    > `INT(size)`
+    
+    > The size is just the display width, that is used when the field has ZEROFILL specified. 
+ 
   3. Date types
 <table>
     <tr>
