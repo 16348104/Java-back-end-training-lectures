@@ -821,4 +821,4 @@ SELECT * FROM table_name;
         - `mid()`
         - `len()`
       - SQL Math
-        - `round()`
+        - `round(
