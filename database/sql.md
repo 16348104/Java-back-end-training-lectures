@@ -800,7 +800,7 @@ SELECT * FROM table_name;
 
       > GROUP BY cloumn_name
 
-      > 把 column_name 列值相同的分为一组
+      > 把 column_name 列值相同的分为一组）·
 
       - **SQL Having**
 
