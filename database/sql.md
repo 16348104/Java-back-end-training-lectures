@@ -492,14 +492,16 @@ SELECT * FROM table_name;
 > Data Query Language
 
 - MySQL Show
-  - SHOW DATABASES;
-  - SHOW TABLES;
-  - SHOW TABLE STATUS FROM database_name;
-  - SHOW [FULL] COLUMNS FROM table_name;
-  - SHOW VARIABLES;
-  - SHOW CREATE TABLE table_name;
-  - SHOW CREATE VIEW view_name;
-  - SHOW INDEX FROM table_name;
+  - SHOW DATABASES; `显示服务器中所有的库`
+  - SHOW TABLES; `显示库中所有的表`
+  - SHOW TABLE STATUS FROM database_name; `显示库中所有表的详细信息`
+  - SHOW TABLE STATUS WHERE Name = 'table_name'; `显示表的详细信息`
+  - SHOW [FULL] COLUMNS FROM table_name; `显示表中所有列的详细信息`
+  - SHOW TABLE STATUS WHERE Name = 'table_name'; `显示表的详细信息`
+  - SHOW VARIABLES; `显示变量`
+  - SHOW CREATE TABLE table_name; `显示建表语句`
+  - SHOW CREATE VIEW view_name; `显示建视图语句`
+  - SHOW INDEX FROM table_name; `显示表中索引信息`
 
 - SQL select
 
