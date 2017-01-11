@@ -498,6 +498,7 @@ SELECT * FROM table_name;
   - SHOW TABLE STATUS WHERE Name = 'table_name'; `显示表的详细信息`
   - SHOW [FULL] COLUMNS FROM table_name; `显示表中所有列的详细信息`
   - SHOW TABLE STATUS WHERE Name = 'table_name'; `显示表的详细信息`
+  - SHOW FULL TABLES FROM 'database_name'; `显示库中的表和视图`
   - SHOW VARIABLES; `显示变量`
   - SHOW CREATE TABLE table_name; `显示建表语句`
   - SHOW CREATE VIEW view_name; `显示建视图语句`
@@ -689,7 +690,7 @@ SELECT * FROM table_name;
   ON table1.column_name=table2.column_name;
   ```
   
-- ~~SQL Full Join~~   `union` 
+- ~~SQL Full Join~~   `UNION` 
 - SQL Union
 
   ```sql
@@ -722,7 +723,24 @@ SELECT * FROM table_name;
 - SQL View
 
   > 被存储的查询
- 
+
+  ```sql
+  -- 创建视图 
+  CREATE [OR REPLACE] VIEW view_name AS
+  SELECT column_name(s)
+  FROM table_name
+  WHERE condition;
+  ``` 
+  
+  ```sql
+  -- 查询视图 
+  SHOW FULL TABLES IN database_name WHERE TABLE_TYPE LIKE 'VIEW';
+  ```
+  
+  ```sql
+  -- 删除视图  
+  DROP VIEW view_name;
+  ```
   1. 简单视图 `updatable view`
       - `简单查询` 生成的，可以修改基表的数据
         - 单表查询
@@ -732,17 +750,11 @@ SELECT * FROM table_name;
         - 没有使用 `DISTINCT`
         - 没有使用 `UNION`
   2. 复杂视图 `read-only view`
-      - `复杂查询` 生成的，不可以修改基表的数据
-  ```sql
-  CREATE [OR REPLACE] VIEW view_name AS
-  SELECT column_name(s)
-  FROM table_name
-  WHERE condition;
-  ```
-  
-  ```sql
-  DROP VIEW view_name;
-  ```
+      - `复杂查询` 生成的，不可以修改基表的数据    
+  3. 视图的作用
+      - 数据安全性
+      - 简化查询
+      - 逻辑独立性
 
 - 子查询 `Sub Queries`
 
