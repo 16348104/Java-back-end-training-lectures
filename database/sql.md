@@ -882,6 +882,8 @@ SELECT * FROM table_name;
       - **SQL Group By**
 
       > GROUP BY cloumn_name
+      
+      > 组查询
 
       > 把 column_name 列值相同的分为一组
 
