@@ -498,7 +498,7 @@ SELECT * FROM table_name;
   - SHOW TABLE STATUS WHERE Name = 'table_name'; `显示表的详细信息`
   - SHOW [FULL] COLUMNS FROM table_name; `显示表中所有列的详细信息`
   - SHOW TABLE STATUS WHERE Name = 'table_name'; `显示表的详细信息`
-  - SHOW FULL TABLES FROM 'database_name'; `显示库中的表和视图`
+  - SHOW FULL TABLES FROM database_name; `显示库中的表和视图`
   - SHOW VARIABLES; `显示变量`
   - SHOW CREATE TABLE table_name; `显示建表语句`
   - SHOW CREATE VIEW view_name; `显示建视图语句`
@@ -793,10 +793,19 @@ SELECT * FROM table_name;
   SAVEPOINT save_point_name; -- 设置保留点
   ROLLBACK TO save_point_name; -- 回滚到保留点，不能结束事务
   ```
+  
+  ```sql
+  SET AUTOCOMMIT = 0;
+  SET AUTOCOMMIT = 1;
+  ```
 
 ### 5. DCL
 
 > Data Control Language
+
+1. 创建用户
+
+
 
 ### SQL 函数
 
