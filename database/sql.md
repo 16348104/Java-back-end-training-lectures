@@ -873,33 +873,33 @@ SELECT * FROM table_name;
 
 ### SQL 函数
 
-  - Aggregate function 聚合函数
-      - SQL `max()`
-      - SQL `min()`
-      - SQL `avg()`
-      - SQL `sum()`
-      - SQL `count()`
-      - ~~SQL `first()`~~
-      - ~~SQL `last()`~~
-      - **SQL Group By**
-
-      > GROUP BY cloumn_name
+  - 聚合函数 `aggregate function`
+      - `max`
+      - `min`
+      - `avg`
+      - `sum`
+      - `count`
+      - ~~`first`~~
+      - ~~`last`~~
       
-      > 组查询
+  - **SQL Group By**
+    
+    > 组查询
+    
+    - GROUP BY cloumn_name
+    - 把 column_name 列值相同的分为一组
+    
+  - **SQL Having**
+    
+    > 组检索
+    
+  -  GROUP_CONCAT(column_name SEPERATOR '')
+    
+    ```sql
+    SET group_concat_max_len = 2048 -- default 1024
+    ```
 
-      > 把 column_name 列值相同的分为一组
-
-      - **SQL Having**
-
-      > 组检索
-
-      -  GROUP_CONCAT(column_name SEPERATOR '')
-      
-      ```sql
-      SET group_concat_max_len = 2048 -- default 1024
-      ```
-
-  - Scalar function 标量函数 
+  - 标量函数 `scalar function` 
       - SQL Date
         - `now()`
       - SQL String
