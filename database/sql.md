@@ -774,8 +774,8 @@ SELECT * FROM table_name;
       - 一个事务 `transaction` 中的所有操作，要么全部完成，要么全部不完成，不会结束在中间某个环节
     - 一致性 `Consistency`
       - 在事务开始之前和事务结束以后，数据库的完整性没有被破坏
-    - 隔离性 `Isolation`
-      - 数据库允许多个并发事务同时对齐数据进行读写和修改的能力，隔离性可以防止多个事务并发执行时由于交叉执行而导致数据的不一致
+    - **隔离性** `Isolation`
+      - 数据库允许多个并发事务对其数据进行读写和修改的能力，隔离性可以防止多个事务并发执行时由于交叉执行而导致数据的不一致
     - 持久性 `Durability`
       - 事务处理结束后，对数据的修改就是永久的，即便系统故障也不会丢失
   - 开启一次事务
@@ -866,8 +866,8 @@ SELECT * FROM table_name;
     |SHOW DATABASES|Show_db_priv|server administration|
     |SHUTDOWN|Shutdown_priv|server administration|
     |SUPER|Super_priv|server administration|
-    |ALL [PRIVILEGES]||server administration|
-    |USAGE||server administration|
+    |ALL [PRIVILEGES]|-|server administration|
+    |USAGE|-|server administration|
 
 ### SQL 函数
 
