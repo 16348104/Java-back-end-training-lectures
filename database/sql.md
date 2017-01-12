@@ -820,11 +820,13 @@ SELECT * FROM table_name;
 
     ```sql
     -- 显示权限信息
-    SHOW GRANTS FOR your_username;
+    SHOW GRANTS FOR your_username@'localhost';
     -- 授予权限
-    GRANT some_privileges ON some_databases(some_tables) TO some_users;
+    GRANT some_privileges ON some_databases(some_tables) TO some_users@'localhost';
     -- 撤销权限
-    GRANT some_privileges ON some_databases(some_tables) FROM some_users;
+    REVOKE some_privileges ON some_databases(some_tables) FROM some_users@'localhost';
+    -- 刷新权限
+    FLUSH PRIVILEGES;
     -- 权限粒度
     GRANT ALL
     REVOKE ALL 
