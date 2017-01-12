@@ -859,7 +859,7 @@ SELECT * FROM table_name;
     |CREATE TABLESPACE|Create_tablespace_priv|server administration|
     |CREATE USER|Create_user_priv|server administration|
     |PROCESS|Process_priv|server administration|
-    |PROXY|see proxies_priv table	server administration|
+    |PROXY|see proxies_priv table|server administration|
     |RELOAD|Reload_priv|server administration|
     |REPLICATION CLIENT|Repl_client_priv|server administration|
     |REPLICATION SLAVE|Repl_slave_priv|server administration|
