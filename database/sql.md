@@ -866,8 +866,8 @@ SELECT * FROM table_name;
     |SHOW DATABASES|Show_db_priv|server administration|
     |SHUTDOWN|Shutdown_priv|server administration|
     |SUPER|Super_priv|server administration|
-    |ALL [PRIVILEGES]||server administration|
-    |USAGE||server administration|
+    |ALL [PRIVILEGES]|-|server administration|
+    |USAGE|-|server administration|
 
 ### SQL 函数
 
