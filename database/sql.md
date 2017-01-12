@@ -837,7 +837,7 @@ SELECT * FROM table_name;
 3. MySQL 权限列表
 
   |Privilege|Column|Context|
-  |---|---|---|
+  |-|-|-|
   |CREATE|Create_priv|databases, tables, or indexes|
   |DROP|Drop_priv|databases, tables, or views|
   |GRANT OPTION|Grant_priv|databases, tables, or stored routines|
