@@ -901,11 +901,11 @@ SELECT * FROM table_name;
 
   - 标量函数 `scalar function` 
       - SQL Date
-        - `now()`
+        - `now`
       - SQL String
-        - `ucase()`
-        - `lcase()`
-        - `mid()`
-        - `len()`
+        - `ucase`
+        - `lcase`
+        - `mid`
+        - `len`
       - SQL Math
-        - `round()`
+        - `round`
