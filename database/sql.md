@@ -914,7 +914,7 @@ SELECT * FROM table_name;
         - LOG(x,y) `返回 x 的以 y 为底的对数`
         - MOD(x,y) `返回 x / y 的模（余数）`
         - PI() `返回 PI 的值（圆周率）`
-        - RAND() `返回 ０ 到 １ 内的随机值,可以通过提供一个参数(种子)使 RAND() 随机数生成器生成一个指定的值`
+        - RAND() `返回 ０ 到 １ 内的随机值,可以通过提供一个种子参数使随机数生成器生成一个指定的值`
         - ROUND(x,y) `返回参数 x 的四舍五入的有 y 位小数的值`
         - SIGN(x) `返回代表数字 x 的符号的值`
         - SQRT(x) `返回一个数的平方根`
@@ -925,7 +925,7 @@ SELECT * FROM table_name;
         - BIT_LENGTH(str) `返回字符串的比特长度`
         - CONCAT(s1,s2...,sn) `将 s1,s2...,sn 连接成字符串`
         - CONCAT_WS(sep,s1,s2...,sn) `将 s1,s2...,sn 连接成字符串，并用 sep 字符间隔`
-        - INSERT(str,x,y,instr) `将字符串 str 从第 x 位置开始，y 个字符长的子串替换为字符串 instr，返回结果`
+        - INSERT(str,x,y,instr) `将字符串 str 从第 x 位置开始，y 个字符长的子串替换为字符串 instr`
         - FIND_IN_SET(str,list) `分析逗号分隔的 list 列表，如果发现 str，返回 str 在 list 中的位置`
         - LCASE(str)或LOWER(str) `返回将字符串 str 中所有字符改变为小写后的结果`
         - LEFT(str,x) `返回字符串 str 中最左边的 x 个字符`
@@ -944,9 +944,9 @@ SELECT * FROM table_name;
     - 日期和时间函数
         - CURDATE()或CURRENT_DATE() `返回当前的日期`
         - CURTIME()或CURRENT_TIME() `返回当前的时间`
-        - DATE_ADD(date,INTERVAL int keyword) `返回日期 date 加上间隔时间 int 的结果(int 必须按照关键字进行格式化),如 SELECT DATE_ADD(CURRENT_DATE,INTERVAL 6 MONTH);`
+        - DATE_ADD(date,INTERVAL int keyword) `返回日期 date 加上间隔时间 int 的结果`
         - DATE_FORMAT(date,fmt) `依照指定的 fmt 格式格式化日期 date 值`
-        - DATE_SUB(date,INTERVAL int keyword) `返回日期 date 加上间隔时间 int 的结果(int 必须按照关键字进行格式化),如 SELECT DATE_SUB(CURRENT_DATE,INTERVAL 6 MONTH);`
+        - DATE_SUB(date,INTERVAL int keyword) `返回日期 date 加上间隔时间 int 的结果`
         - DAYOFWEEK(date) `返回 date 所代表的一星期中的第几天(1~7)`
         - DAYOFMONTH(date) `返回 date 是一个月的第几天(1~31)`
         - DAYOFYEAR(date) `返回 date 是一年的第几天(1~366)`
@@ -955,8 +955,8 @@ SELECT * FROM table_name;
         - HOUR(time) `返回 time 的小时值(0~23)`
         - MINUTE(time) `返回 time 的分钟值(0~59)`
         - MONTH(date) `返回 date 的月份值(1~12)`
-        - MONTHNAME(date) `返回 date 的月份名，如 SELECT MONTHNAME(CURRENT_DATE);`
+        - MONTHNAME(date) `返回 date 的月份名`
         - NOW() `返回当前的日期和时间`
-        - QUARTER(date) `返回 date 在一年中的季度(1~4)，如 SELECT QUARTER(CURRENT_DATE);`
+        - QUARTER(date) `返回 date 在一年中的季度(1~4)`
         - WEEK(date) `返回日期 date 为一年中第几周(0~53)`
         - YEAR(date) `返回日期 date 的年份(1000~9999)`
