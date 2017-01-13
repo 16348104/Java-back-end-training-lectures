@@ -894,7 +894,7 @@ SELECT * FROM table_name;
       
       - HAVING `组检索`
 
-      -  GROUP_CONCAT(column_name SEPERATOR '')
+      - GROUP_CONCAT([DISTINCT] column_name [Order BY ASC/DESC column_name] [Separator '分隔符'])
       
         ```sql
         SET group_concat_max_len = 2048 -- default 1024
