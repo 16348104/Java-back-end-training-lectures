@@ -884,13 +884,13 @@ SELECT * FROM table_name;
       - ~~LAST()~~
       
    - **SQL Group By** `组查询`
-   
-      > 把 column_name 列值相同的分为一组
 
         ```sql
-        SELECT aggregate function(column_name)
+        SELECT aggregate_function(column_name)
         GROUP BY cloumn_name;
         ```
+   
+      > 把 column_name 列值相同的分为一组
       
       - HAVING `组检索`
 
@@ -903,60 +903,60 @@ SELECT * FROM table_name;
   - Scalar function 标量函数 
 
     - 数学函数
-        - ABS(x) `返回x的绝对值`
-        - BIN(x) `返回x的二进制（OCT返回八进制，HEX返回十六进制）`
-        - CEILING(x) `返回大于x的最小整数值`
-        - EXP(x) `返回值e（自然对数的底）的x次方`
-        - FLOOR(x) `返回小于x的最大整数值`
+        - ABS(x) `返回 x 的绝对值`
+        - BIN(x) `返回 x 的二进制（OCT 返回八进制，HEX 返回十六进制）`
+        - CEILING(x) `返回大于 x 的最小整数值`
+        - EXP(x) `返回值 e（自然对数的底）的 x 次方`
+        - FLOOR(x) `返回小于 x 的最大整数值`
         - GREATEST(x1,x2,...,xn) `返回集合中最大的值`
         - LEAST(x1,x2,...,xn) `返回集合中最小的值`
-        - LN(x) `返回x的自然对数`
-        - LOG(x,y) `返回x的以y为底的对数`
-        - MOD(x,y) `返回x/y的模（余数）`
-        - PI() `返回pi的值（圆周率）`
-        - RAND() `返回０到１内的随机值,可以通过提供一个参数(种子)使RAND()随机数生成器生成一个指定的值。`
-        - ROUND(x,y) `返回参数x的四舍五入的有y位小数的值`
-        - SIGN(x) `返回代表数字x的符号的值`
+        - LN(x) `返回 x 的自然对数`
+        - LOG(x,y) `返回 x 的以 y 为底的对数`
+        - MOD(x,y) `返回 x / y 的模（余数）`
+        - PI() `返回 PI 的值（圆周率）`
+        - RAND() `返回 ０ 到 １ 内的随机值,可以通过提供一个参数(种子)使 RAND() 随机数生成器生成一个指定的值`
+        - ROUND(x,y) `返回参数 x 的四舍五入的有 y 位小数的值`
+        - SIGN(x) `返回代表数字 x 的符号的值`
         - SQRT(x) `返回一个数的平方根`
-        - TRUNCATE(x,y) `返回数字x截短为y位小数的结果`
+        - TRUNCATE(x,y) `返回数字 x 截短为 y 位小数的结果`
     
     - 字符串函数
-        - ASCII(char) `返回字符的ASCII码值`
+        - ASCII(char) `返回字符的 ASCII 码值`
         - BIT_LENGTH(str) `返回字符串的比特长度`
-        - CONCAT(s1,s2...,sn) `将s1,s2...,sn连接成字符串`
-        - CONCAT_WS(sep,s1,s2...,sn) `将s1,s2...,sn连接成字符串，并用sep字符间隔`
-        - INSERT(str,x,y,instr) `将字符串str从第x位置开始，y个字符长的子串替换为字符串instr，返回结果`
-        - FIND_IN_SET(str,list) `分析逗号分隔的list列表，如果发现str，返回str在list中的位置`
-        - LCASE(str)或LOWER(str) `返回将字符串str中所有字符改变为小写后的结果`
-        - LEFT(str,x) `返回字符串str中最左边的x个字符`
-        - LENGTH(s) `返回字符串str中的字符数`
-        - LTRIM(str) `从字符串str中切掉开头的空格`
-        - POSITION(substr,str) `返回子串substr在字符串str中第一次出现的位置`
-        - QUOTE(str) `用反斜杠转义str中的单引号`
-        - REPEAT(str,srchstr,rplcstr) `返回字符串str重复x次的结果`
-        - REVERSE(str) `返回颠倒字符串str的结果`
-        - RIGHT(str,x) `返回字符串str中最右边的x个字符`
-        - RTRIM(str) `返回字符串str尾部的空格`
-        - STRCMP(s1,s2) `比较字符串s1和s2`
+        - CONCAT(s1,s2...,sn) `将 s1,s2...,sn 连接成字符串`
+        - CONCAT_WS(sep,s1,s2...,sn) `将 s1,s2...,sn 连接成字符串，并用 sep 字符间隔`
+        - INSERT(str,x,y,instr) `将字符串 str 从第 x 位置开始，y 个字符长的子串替换为字符串 instr，返回结果`
+        - FIND_IN_SET(str,list) `分析逗号分隔的 list 列表，如果发现 str，返回 str 在 list 中的位置`
+        - LCASE(str)或LOWER(str) `返回将字符串 str 中所有字符改变为小写后的结果`
+        - LEFT(str,x) `返回字符串 str 中最左边的 x 个字符`
+        - LENGTH(s) `返回字符串 str 中的字符数`
+        - LTRIM(str) `从字符串 str 中切掉开头的空格`
+        - POSITION(substr,str) `返回子串 substr 在字符串 str 中第一次出现的位置`
+        - QUOTE(str) `用反斜杠转义 str 中的单引号`
+        - REPEAT(str,srchstr,rplcstr) `返回字符串 str 重复 x 次的结果`
+        - REVERSE(str) `返回颠倒字符串 str 的结果`
+        - RIGHT(str,x) `返回字符串 str 中最右边的 x 个字符`
+        - RTRIM(str) `返回字符串 str 尾部的空格`
+        - STRCMP(s1,s2) `比较字符串 s1 和 s2`
         - TRIM(str) `去除字符串首部和尾部的所有空格`
-        - UCASE(str)或UPPER(str) `返回将字符串str中所有字符转变为大写后的结果`
+        - UCASE(str)或UPPER(str) `返回将字符串 str 中所有字符转变为大写后的结果`
             
     - 日期和时间函数
         - CURDATE()或CURRENT_DATE() `返回当前的日期`
         - CURTIME()或CURRENT_TIME() `返回当前的时间`
-        - DATE_ADD(date,INTERVAL int keyword) `返回日期date加上间隔时间int的结果(int必须按照关键字进行格式化),如：SELECT DATE_ADD(CURRENT_DATE,INTERVAL 6 MONTH);`
-        - DATE_FORMAT(date,fmt) `依照指定的fmt格式格式化日期date值`
-        - DATE_SUB(date,INTERVAL int keyword) `返回日期date加上间隔时间int的结果(int必须按照关键字进行格式化),如：SELECT DATE_SUB(CURRENT_DATE,INTERVAL 6 MONTH);`
-        - DAYOFWEEK(date) `返回date所代表的一星期中的第几天(1~7)`
-        - DAYOFMONTH(date) `返回date是一个月的第几天(1~31)`
-        - DAYOFYEAR(date) `返回date是一年的第几天(1~366)`
-        - DAYNAME(date) `返回date的星期名，如：SELECT DAYNAME(CURRENT_DATE);`
-        - FROM_UNIXTIME(ts,fmt) `根据指定的fmt格式，格式化UNIX时间戳ts`
-        - HOUR(time) `返回time的小时值(0~23)`
-        - MINUTE(time) `返回time的分钟值(0~59)`
-        - MONTH(date) `返回date的月份值(1~12)`
-        - MONTHNAME(date) `返回date的月份名，如：SELECT MONTHNAME(CURRENT_DATE);`
+        - DATE_ADD(date,INTERVAL int keyword) `返回日期 date 加上间隔时间 int 的结果(int 必须按照关键字进行格式化),如 SELECT DATE_ADD(CURRENT_DATE,INTERVAL 6 MONTH);`
+        - DATE_FORMAT(date,fmt) `依照指定的 fmt 格式格式化日期 date 值`
+        - DATE_SUB(date,INTERVAL int keyword) `返回日期 date 加上间隔时间 int 的结果(int 必须按照关键字进行格式化),如 SELECT DATE_SUB(CURRENT_DATE,INTERVAL 6 MONTH);`
+        - DAYOFWEEK(date) `返回 date 所代表的一星期中的第几天(1~7)`
+        - DAYOFMONTH(date) `返回 date 是一个月的第几天(1~31)`
+        - DAYOFYEAR(date) `返回 date 是一年的第几天(1~366)`
+        - DAYNAME(date) `返回 date 的星期名，如：SELECT DAYNAME(CURRENT_DATE);`
+        - FROM_UNIXTIME(ts,fmt) `根据指定的 fmt 格式，格式化 UNIX 时间戳 ts`
+        - HOUR(time) `返回 time 的小时值(0~23)`
+        - MINUTE(time) `返回 time 的分钟值(0~59)`
+        - MONTH(date) `返回 date 的月份值(1~12)`
+        - MONTHNAME(date) `返回 date 的月份名，如 SELECT MONTHNAME(CURRENT_DATE);`
         - NOW() `返回当前的日期和时间`
-        - QUARTER(date) `返回date在一年中的季度(1~4)，如SELECT QUARTER(CURRENT_DATE);`
-        - WEEK(date) `返回日期date为一年中第几周(0~53)`
-        - YEAR(date) `返回日期date的年份(1000~9999)`
+        - QUARTER(date) `返回 date 在一年中的季度(1~4)，如 SELECT QUARTER(CURRENT_DATE);`
+        - WEEK(date) `返回日期 date 为一年中第几周(0~53)`
+        - YEAR(date) `返回日期 date 的年份(1000~9999)`
