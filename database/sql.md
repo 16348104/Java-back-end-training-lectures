@@ -836,40 +836,40 @@ SELECT * FROM table_name;
     
 3. MySQL 权限列表
 
-|Privilege|Column|Context|
-|----------|------|------|
-|CREATE|Create_priv|databases, tables, or indexes|
-|DROP|Drop_priv|databases, tables, or views|
-|GRANT OPTION|Grant_priv|databases, tables, or stored routines|
-|LOCK TABLES|Lock_tables_priv|databases| 
-|REFERENCES|References_priv|databases or tables| 
-|EVENT|Event_priv|databases|
-|ALTER|Alter_priv|tables| 
-|DELETE|Delete_priv|tables|
-|INDEX|Index_priv|tables| 
-|INSERT|Insert_priv|tables or columns|
-|SELECT|Select_priv|tables or columns|
-|UPDATE|Update_priv|tables or columns|
-|CREATE TEMPORARY TABLES|Create_tmp_table_priv|tables| 
-|TRIGGER|Trigger_priv|tables|
-|CREATE VIEW|Create_view_priv|views|
-|SHOW VIEW|Show_view_priv|views|
-|ALTER ROUTINE|Alter_routine_priv|stored routines|
-|CREATE ROUTINE|Create_routine_priv|stored routines|
-|EXECUTE|Execute_priv|stored routines|
-|FILE|File_priv|file access on server host|
-|CREATE TABLESPACE|Create_tablespace_priv|server administration|
-|CREATE USER|Create_user_priv|server administration|
-|PROCESS|Process_priv|server administration|
-|PROXY|see proxies_priv table|server administration| 
-|RELOAD|Reload_priv|server administration|
-|REPLICATION CLIENT|Repl_client_priv|server administration|
-|REPLICATION SLAVE|Repl_slave_priv|server administration|
-|SHOW DATABASES|Show_db_priv|server administration|
-|SHUTDOWN|Shutdown_priv|server administration| 
-|SUPER|Super_priv|server administration|
-|ALL [PRIVILEGES]||server administration|
-|USAGE||server administration|
+    |Privilege|Column|Context|
+    |----------|------|------|
+    |CREATE|Create_priv|databases, tables, or indexes|
+    |DROP|Drop_priv|databases, tables, or views|
+    |GRANT OPTION|Grant_priv|databases, tables, or stored routines|
+    |LOCK TABLES|Lock_tables_priv|databases| 
+    |REFERENCES|References_priv|databases or tables| 
+    |EVENT|Event_priv|databases|
+    |ALTER|Alter_priv|tables| 
+    |DELETE|Delete_priv|tables|
+    |INDEX|Index_priv|tables| 
+    |INSERT|Insert_priv|tables or columns|
+    |SELECT|Select_priv|tables or columns|
+    |UPDATE|Update_priv|tables or columns|
+    |CREATE TEMPORARY TABLES|Create_tmp_table_priv|tables| 
+    |TRIGGER|Trigger_priv|tables|
+    |CREATE VIEW|Create_view_priv|views|
+    |SHOW VIEW|Show_view_priv|views|
+    |ALTER ROUTINE|Alter_routine_priv|stored routines|
+    |CREATE ROUTINE|Create_routine_priv|stored routines|
+    |EXECUTE|Execute_priv|stored routines|
+    |FILE|File_priv|file access on server host|
+    |CREATE TABLESPACE|Create_tablespace_priv|server administration|
+    |CREATE USER|Create_user_priv|server administration|
+    |PROCESS|Process_priv|server administration|
+    |PROXY|see proxies_priv table|server administration| 
+    |RELOAD|Reload_priv|server administration|
+    |REPLICATION CLIENT|Repl_client_priv|server administration|
+    |REPLICATION SLAVE|Repl_slave_priv|server administration|
+    |SHOW DATABASES|Show_db_priv|server administration|
+    |SHUTDOWN|Shutdown_priv|server administration| 
+    |SUPER|Super_priv|server administration|
+    |ALL [PRIVILEGES]||server administration|
+    |USAGE||server administration|
 
 ### SQL 函数
 
