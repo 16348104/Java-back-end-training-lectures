@@ -1,6 +1,6 @@
 # Java 后端开发培训讲义
 
-> Practice makes perfect.
+> 2017, Tsinghua University.
 
 ### Index
 
