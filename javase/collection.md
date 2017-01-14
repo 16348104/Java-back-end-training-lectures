@@ -289,7 +289,7 @@
 - `Collections`
     - reverse
     - sort
-    - singletonList // compare with Arrays.asList()
+    - singletonList `ompare with Arrays.asList()`
 - `Arrays`
     - asList
     - binarySearch

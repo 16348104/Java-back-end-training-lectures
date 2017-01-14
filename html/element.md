@@ -1,4 +1,4 @@
-*# Chapter 4 常用元素
+# Chapter 4 常用元素
 
 ### Document type
 - !doctype  `document type`

@@ -204,7 +204,7 @@
     - 静态方法中只能直接引用静态成员
     - 静态方法中不能使用 `this` 和 `super`
     - 方法中不能定义静态变量
-    - 静态导入（JDK/1.5+）
+    - 静态导入（JDK 1.5+）
 
       ```java
       import static java.lang.System.out

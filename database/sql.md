@@ -494,10 +494,10 @@ SELECT * FROM table_name;
 - MySQL Show
   - SHOW DATABASES; `显示服务器中所有的库`
   - SHOW TABLES; `显示库中所有的表`
-  - SHOW TABLE STATUS FROM database_name; `显示库中所有表的详细信息`
-  - SHOW TABLE STATUS WHERE Name = 'table_name'; `显示表的详细信息`
-  - SHOW [FULL] COLUMNS FROM table_name; `显示表中所有列的详细信息`
-  - SHOW TABLE STATUS WHERE Name = 'table_name'; `显示表的详细信息`
+  - SHOW TABLE STATUS FROM database_name; `显示库中所有表的信息`
+  - SHOW TABLE STATUS WHERE Name = 'table_name'; `显示表的信息`
+  - SHOW [FULL] COLUMNS FROM table_name; `显示表中所有列的信息`
+  - SHOW TABLE STATUS WHERE Name = 'table_name'; `显示表的信息`
   - SHOW FULL TABLES FROM database_name; `显示库中的表和视图`
   - SHOW VARIABLES; `显示变量`
   - SHOW CREATE TABLE table_name; `显示建表语句`
