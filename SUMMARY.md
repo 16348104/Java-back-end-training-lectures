@@ -82,6 +82,3 @@
    * [Git](misc/git.md)
    * [Github](misc/github.md)
    * [Gradle](misc/gradle.md)
-* [Schedules](schedules/README.md)
-  * [201601班课程时间表](schedules/schedule_201601.md)
-  * [201601班每周计划表](schedules/week_plan_201601.md)
