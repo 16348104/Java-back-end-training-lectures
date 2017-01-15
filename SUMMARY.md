@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [Java back end training lectures](README.md)
 * [HTML](html/README.md)
    * [引言](html/intro.md)
    * [核心基础](html/basic.md)
