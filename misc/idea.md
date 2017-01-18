@@ -1,4 +1,4 @@
-# Intellij Idea
+# Intellij Idea  `/ɪnˈtɛlɪdʒeɪ aɪˈdɪə/`
 
 <img src="../image/idea/logo_idea.png" title="Intellij IDEA" width="100">
 
