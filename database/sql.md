@@ -467,24 +467,26 @@ SELECT * FROM table_name;
   WHERE some_column=some_value;
   ```
 
-  > MySQL dupm and import
+  > MySQL dump and import
 
   - import
   
     ```sql
     mysql> source file_name.sql
     ```
+    
+  - load
+  
+    ```sql
+    LOAD DATA LOCAL INFILE 'path_to_your_csv_file'
+    INTO TABLE your_db.your_table
+    FIELDS TERMINATED BY ',' (column_name1, column_name2, ...)
+    SET id = NULL;
+    ```
   - dump
   
     ```sql
     mysql> mysqldump -B -u your_mysql_username -p database_name > file_name.sql
-    ```
-
-    ```sql
-    LOAD DATA INFILE 'path_to_your_csv_file'
-    INTO TABLE your_db.your_table
-    FIELDS TERMINATED BY ',' (column_name1, column_name2, ...)
-    SET id = NULL ;
     ```
 
 ### 3. DQL
