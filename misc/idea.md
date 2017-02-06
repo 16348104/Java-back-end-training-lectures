@@ -85,7 +85,7 @@
     ```
    
    - 创建 Java Web 项目
-     - 参见 [5. 创建基于 Gradle 构建的 Java Web 项目](idea.md)
+     - 参见 [4. 创建基于 Gradle 构建的 Java Web 项目](idea.md)
    - 在 Tomcat 中部署 Java Web 项目
    
      ```
