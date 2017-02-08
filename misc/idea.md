@@ -106,5 +106,6 @@
      单击 OK
      ```
    - Tomcat　的启动　/ 重启　/　重部署
-     -  Shift + Alt + F10
+     -  Win: Shift + Alt + F10
+     -  Mac: Control + Option + R
     
