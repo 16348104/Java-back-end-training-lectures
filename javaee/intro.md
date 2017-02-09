@@ -45,8 +45,13 @@
             - find port using and kill task
 
               ```
-              > netstat -ano|findstr 8080
-              > taskkill /pid some_pid
+              Win:
+              > netstat -ano|findstr <port>
+              > taskkill /f /pid <pid>
+              
+              Mac:
+              $ lsof -i :<port>
+              $ kill -9 <pid>
               ```
         - browser:
         
