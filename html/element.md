@@ -84,9 +84,23 @@
 
 ### Forms
 - **form**
+  - action
+  - method
 - **input**
+  - name
+  - disabled
+  - checked
+  - type `.attr`
+      - text
+      - password
+      - radio
+      - checkbox
+      - button
+      - file
+      - hidden
 - **select**
-- **option**
+  - **option**
+    - selected `.attr`
 - **textarea**
 - **button**
 

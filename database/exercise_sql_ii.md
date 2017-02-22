@@ -46,7 +46,7 @@
 
 > Date Time \[21 Exercises with Solution\]
 
-PART 7
+### PART 7
 
 > String Functions \[16 Exercises with Solution\]
 

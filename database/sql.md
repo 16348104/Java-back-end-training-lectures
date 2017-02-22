@@ -411,15 +411,26 @@ SELECT * FROM table_name;
   ```sql
   ALTER TABLE table_name DROP INDEX unique_column_name;
   ```
+  
+  ```sql
+  -- Delete all duplicated rows except one
+  ALTER IGNORE TABLE table_name
+  ADD UNIQUE INDEX idx_name (column);
+
+  -- If you want to keep the row with the lowest id value:
+  DELETE n1 FROM names n1, names n2 WHERE n1.id > n2.id AND n1.name = n2.name;
+  -- If you want to keep the row with the highest id value:
+  DELETE n1 FROM names n1, names n2 WHERE n1.id < n2.id AND n1.name = n2.name;
+  ```
 
 - Index
 
   ```sql
-  CREATE INDEX ind_column ON table_name(column);
+  CREATE INDEX idx_name ON table_name(column);
   ```
   
   ```sql
-  DROP INDEX ind_column ON table_name;
+  DROP INDEX idx_name ON table_name;
   ```
   
   ```sql
