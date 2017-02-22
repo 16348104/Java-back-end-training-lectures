@@ -3,6 +3,8 @@
 ### Document type
 - !doctype  `document type`
  
+  > [文档类型声明](https://zh.wikipedia.org/wiki/HTML#.E6.A0.87.E8.AE.B0)
+ 
 ### Headings
 - html
 - body
