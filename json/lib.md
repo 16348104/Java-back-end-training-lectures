@@ -1,6 +1,6 @@
 # Chapter 3 常用库
 
-- Java
+- Java Library
     1. `org.json`
 
       ```
@@ -76,7 +76,7 @@
       Model model = JSON.parseObject(json, Model.class);
       ```
         
-   > 一个完整的例子
+- 一个完整的例子
 
     ```java
     package test;
@@ -198,6 +198,117 @@
     }
 
     ```
+    
+- fastjson 数据绑定
+
+    > [Samples DataBind](https://github.com/alibaba/fastjson/wiki/Samples-DataBind)
+    
+    > Fastjson full support databind, it's simple to use.
+    
+    - Encode
+    
+        ```java
+        import com.alibaba.fastjson.JSON;
+        
+        Group group = new Group();
+        group.setId(0L);
+        group.setName("admin");
+        
+        User guestUser = new User();
+        guestUser.setId(2L);
+        guestUser.setName("guest");
+        
+        User rootUser = new User();
+        rootUser.setId(3L);
+        rootUser.setName("root");
+        
+        group.addUser(guestUser);
+        group.addUser(rootUser);
+        
+        String jsonString = JSON.toJSONString(group);
+        
+        System.out.println(jsonString);
+        ```
+    
+    - Output
+        
+        ```
+        {"id":0,"name":"admin","users":[{"id":2,"name":"guest"},{"id":3,"name":"root"}]}
+        ```
+    
+    - **Decode**
+    
+        > Group group = JSON.parseObject(jsonString, Group.class);
+        
+        ```
+        String jsonString = ...;
+        Group group = JSON.parseObject(jsonString, Group.class);
+        ```
+    
+    - Group.java
+        
+        ```java
+        public class Group {
+        
+            private Long       id;
+            private String     name;
+            private List<User> users = new ArrayList<User>();
+        
+            public Long getId() {
+                return id;
+            }
+        
+            public void setId(Long id) {
+                this.id = id;
+            }
+        
+            public String getName() {
+                return name;
+            }
+        
+            public void setName(String name) {
+                this.name = name;
+            }
+        
+            public List<User> getUsers() {
+                return users;
+            }
+        
+            public void setUsers(List<User> users) {
+                this.users = users;
+            }
+    
+                public void addUser(User user) {
+                    users.add(user);
+                }
+        }
+        ```
+    
+    - User.java
+    
+        ```java
+        public class User {
+        
+            private Long   id;
+            private String name;
+        
+            public Long getId() {
+                return id;
+            }
+        
+            public void setId(Long id) {
+                this.id = id;
+            }
+        
+            public String getName() {
+                return name;
+            }
+        
+            public void setName(String name) {
+                this.name = name;
+            }
+        }
+        ```
     
 - JavaScript
   1. Parse JSON in jQuery AJAX
