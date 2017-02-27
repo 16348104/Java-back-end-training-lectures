@@ -78,25 +78,23 @@
     - 派生选择器 `descendant selector`
       - 由多个基本选择器使用空格 ` ` 连接
       - 选择含有嵌套关系的标记
-    
-## 属性选择器
-- `[attribute]`	用于选取带有指定属性的元素
-- `[attribute=value]`	用于选取带有指定属性和值的元素
-- `[attribute~=value]`	用于选取属性值中包含指定**词汇**的元素
-- `[attribute|=value]`	用于选取带有以指定值开头的属性值的元素，该值必须是整个单词
-- `[attribute^=value]`	匹配属性值以指定值开头的每个元素
-- `[attribute$=value]`	匹配属性值以指定值结尾的每个元素
-- `[attribute*=value]`	匹配属性值中包含指定**值**的每个元素
-## 伪类 `pseudo-class`
+- 属性选择器
+    - `[attribute]`	用于选取带有指定属性的元素
+    - `[attribute=value]`	用于选取带有指定属性和值的元素
+    - `[attribute~=value]`	用于选取属性值中包含指定**词汇**的元素
+    - `[attribute|=value]`	用于选取带有以指定值开头的属性值的元素，该值必须是整个单词
+    - `[attribute^=value]`	匹配属性值以指定值开头的每个元素
+    - `[attribute$=value]`	匹配属性值以指定值结尾的每个元素
+    - `[attribute*=value]`	匹配属性值中包含指定**值**的每个元素
+- 伪类 `pseudo-class`
 
-> A pseudo-class is used to define a special **state** of an element.
+    > A pseudo-class is used to define a special **state** of an element.
 
-- 锚点的 LoVe - HeAt
-    
-  - `:link`
-  - `:visited`
-  - `:hover`
-  - `:active`
+    - 锚点的 LoVe - HeAt 
+      - `:link`
+      - `:visited`
+      - `:hover`
+      - `:active`
   
   > All
   
@@ -132,10 +130,10 @@
   - `:valid`
   - `:visited`
     
-## 伪元素 `pseudo-element`
+- 伪元素 `pseudo-element`
 
-> A CSS pseudo-element is used to style specified **parts** of an element.
-
+    > A CSS pseudo-element is used to style specified **parts** of an element.
+  
   - `::before`
   - `::after`
   - `::first-letter`
