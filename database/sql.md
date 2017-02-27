@@ -43,7 +43,7 @@ SELECT * FROM table_name;
 ## SQL 语句
 ### 1. DDL
 
-> Data Defination Language
+> Data Definition Language
 
 - SQL Create DB
 
