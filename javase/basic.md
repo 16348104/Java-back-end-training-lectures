@@ -54,7 +54,7 @@
             </tr>
             <tr>
                 <td>extends</td>
-                <td>扩允，继承</td>
+                <td>扩展，继承</td>
             </tr>
             <tr>
                 <td>final</td>
@@ -74,7 +74,7 @@
             </tr>
             <tr>
                 <td>new</td>
-                <td>新，创建</td>
+                <td>新建，创建</td>
             </tr>
             <tr>
                 <td>static</td>
@@ -232,7 +232,7 @@
             <tr>
                 <td rowspan="1" align="center">保留关键字</td>
                 <td>goto</td>
-                <td>是关键字，但不能使用</td>
+                <td>不是关键字，但不能使用</td>
             </tr>
         </table>
     
