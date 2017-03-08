@@ -310,7 +310,7 @@
             - `null` 一切引用数据类型的直接量
 
 3. 运算符
-    - 算术运算符 `Arithmic operators`
+    - 算术运算符 `Arithmetic operators`
         - +
         > &plus; 在数值与字符串中的运算规则
         
@@ -347,7 +347,7 @@
         - ^
         - ~
         - <<
-        - &gt;&gt;&gt; 
+        - &gt;&gt;&gt; `无符号右移`
             - `0 fill`
         - &gt;&gt; 
             - positive `0 fill`
@@ -369,7 +369,7 @@
         - &gt;&gt;=
         - &gt;&gt;&gt;=
     - 条件运算符 `Conditional operator`
-        - (condition)?(ture value):(false value) 三目运算符
+        - (condition)?(ture_value):(false_value) 三目运算符
     - 其他运算符 `Misc operators`
         - `(`类型`)` 强制类型转换 `cast`
           - 强制类型转换有风险
@@ -412,7 +412,7 @@
                     byte char int short enum String(JDK 1.7+) 
         - 循环结构
             - `for`
-            - `for-each` - `enhanced fpr loop`
+            - `for-each` - `enhanced for loop`
             - `while`
             - `do`/`while`
         - `break` 跳出当前这一个循环
