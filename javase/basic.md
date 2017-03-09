@@ -256,7 +256,7 @@
             - 接口 `interface`
             - 枚举 `enum`
             - 数组 `array`
-    - 基本数据类型的封装类 `wrapper class`
+    - 基本类型 `primitive` 和装箱基本类型 `boxed primitive`
       - `Boolean` - `boolean`
       - `Byte` - `byte`
       - `Character` - `char`
@@ -265,10 +265,32 @@
       - `Long` - `long`
       - `Float` - `float`
       - `Double` - `double`
-      - 自动装箱 `Autoboxing`
-      - 自动拆箱 `Unboxing`
+      - 基本类型只有值；装箱基本类型有值和不同的引用
+      - 基本类型只有一个功能值；装箱基本类型有功能值和非功能值 `null`
+      - 基本类型比装箱基本类型更节省时间和空间
+      - 自动装箱 `autoboxing` JDK1.5
+        - 降低了使用装箱基本类型的繁琐性，但存在风险：装箱基本类型的 `==` 和 `!=` 几乎总是错误的
+      - 自动拆箱 `auto-unboxing` JDK1.5
+        - 混合使用装箱基本类型和基本类型时，自动拆箱
+      
+        ```java
+        public static void main(String[] args) {    
+            Long sum = 0L; // Hideously slow! |ˈhɪdɪəsli|
+            for(int i = 0; i < Integer.MAX_VAL; i++) {
+                sum += i;
+            }
+            System.out.println(sum);
+        }        
+        ``` 
+      - **基本类型优于装箱基本类型**   
     - 浮点数的精度损失
-      - java.math.BigDecimal
+    
+      > They perform `binary floating-point arithmetic`, which was carefully designed to furnish accurate `approximations` quickly over a broad range of magnitudes.
+      
+      > The float and double types are particularly ill-suited for monetary calculations.
+        
+      - `java.math.BigDecimal`
+      - `int` or `long`
     - 变量
         - 类型
         - 名字
