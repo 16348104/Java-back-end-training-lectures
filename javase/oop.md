@@ -77,7 +77,7 @@
         - `new` 创建或生成一个类的对象，总是调用类的构造方法
         - `.` 调用域或方法
 2. 继承 `inheritance`
-    - `extends` 继承/扩展
+    - `extends` 扩展
     - `子类`(`sub class`) `extends`(`继承`) `父类`(`super class`)
         - 子类拥有父类的域和方法
         

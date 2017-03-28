@@ -14,7 +14,7 @@
     ```java
     数据类型[] 数组名 = new 数据类型[元素的个数]; // {元素1, 元素2, ... };
     ```
-    - 下标（索引） `index`
+    - 索引（下标） `index`
     - 循环初始化
     - 数组循环时，推荐使用 `length`
     - 遍历
@@ -38,7 +38,7 @@
         > methods
         
         - charAt
-        - concact `concatenate` `[kɒn'kætɪneɪt]	`
+        - concat `concatenate` `[kɒn'kætɪneɪt]	`
         - contains
         - endsWith
         - equals
