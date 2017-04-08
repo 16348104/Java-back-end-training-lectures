@@ -75,6 +75,8 @@
         - size
         - capacity
         - clear
+        - remove
+        - set
 4. 哈希表 `java.util.Hashtable`
     - `Hashtable` 中 `key` 是唯一的
     - `Hashtable` 的重要方法

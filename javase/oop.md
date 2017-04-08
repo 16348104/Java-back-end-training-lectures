@@ -197,7 +197,19 @@
         - 抽象的方法没有实现
         - 抽象的方法必须声明在抽象类中
         - 在抽象类的子类中被实现
-7. `static`
+7. `final`
+    - 终态
+    - 可以修饰类、域和方法
+    - 终态的类不能再被子类化
+    - 终态的域
+        - 只能在声明时或构造方法中被初始化
+        - 初始化之后值不能再被修改
+    - 终态的方法不能在子类中被重写
+    - 静态并终态的域
+        - 只能在声明时初始化
+        - 初始化之后值不能再被修改
+        - 常量，都是大写字母，单词之间用下划线 `_` 分隔
+8. `static`
     - 静态
     - 可以修饰域和方法
     - 静态的成员隶属于`类对象`
@@ -218,19 +230,7 @@
       static {
         // ...
       }
-      ```
-8. `final`
-    - 终态
-    - 可以修饰类、域和方法
-    - 终态的类不能再被子类化
-    - 终态的域
-        - 只能在声明时或构造方法中被初始化
-        - 初始化之后值不能再被修改
-    - 终态的方法不能在子类中被重写
-    - 静态并终态的域
-        - 只能在声明时初始化
-        - 初始化之后值不能再被修改
-        - 常量，都是大写字母，单词之间用下划线 `_` 分隔
+      ```        
 9. 接口 `interface`
     - 与类处于同一个级别
     - 接口的定义
@@ -252,11 +252,13 @@
         - 相同点
             - 都不能实例化
             - 都可以定义抽象方法
-            - 对于他们的子（实现）类做了限制和约束
+            - 对于他们的子类 / 实现类做了限制和约束
         - 不同点
-            - 抽象类可以定义具体方法，接口不能
-            - 类只能继承一个抽象类，可以实现多个接口
-    - 接口本身可以继承 `extends` 多个父接口
+            - 接口的域都是公有常量，抽象类都可以
+            - 接口没有构造方法，抽象类有
+            - 接口不能定义非抽象方法，抽象类可以
+            - Java 语言的类只能继承一个抽象类，但可以实现多个接口
+    - 接口本身可以扩展 `extends` 多个父接口
 10. 变量作用域范围
     - 变量（方法）产生作用的有效范围
       - 类作用域范围
@@ -381,63 +383,40 @@
         
     - 匿名内部类 `Annoymous inner class` `[ə'nɒnɪməs]`
     
-    ```java
-    // 不使用匿名内部类的情况
-    
-    abstract class Person {
-        public abstract void eat();
-    }
-    class Child extends Person {
-        public void eat() {
-            System.out.println("eat something");
+        ```java
+        // 不使用匿名内部类的情况
+
+        abstract class Person {
+            public abstract void eat();
         }
-    }
-    public class Demo {
-        public static void main(String[] args) {
-            Person p = new Child();
-            p.eat();
+        class Child extends Person {
+            public void eat() {
+                System.out.println("eat something");
+            }
         }
-    }
-    ```
-    
-    ```java
-    // 使用匿名内部类的情况
-    
-    abstract class Person {
-        public abstract void eat();
-    }
-    public class Demo {
-        public static void main(String[] args){
-           
-            // 直接继承 Person 类
-            new Person() {
-                public void eat() {
-                    System.out.println("eat something");
-                }
-            }.eat();
+        public class Demo {
+            public static void main(String[] args) {
+                Person p = new Child();
+                p.eat();
+            }
         }
-    }        
-    ```
-        
-    
- 
+        ```
 
+        ```java
+        // 使用匿名内部类的情况
 
+        abstract class Person {
+            public abstract void eat();
+        }
+        public class Demo {
+            public static void main(String[] args){
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                // 直接继承 Person 类
+                new Person() {
+                    public void eat() {
+                        System.out.println("eat something");
+                    }
+                }.eat();
+            }
+        }        
+        ```
