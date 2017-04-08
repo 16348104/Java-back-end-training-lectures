@@ -1,5 +1,7 @@
 # Install
 
+> [http://dblab.xmu.edu.cn/blog/](http://dblab.xmu.edu.cn/blog/)
+
 ### Mac
 
 1. install homebrew
@@ -45,7 +47,49 @@
 	brew install hadoop
 	```	
 	
-4. test Hadoop	
+	```
+    Error: The `brew link` step did not complete successfully
+    The formula built, but is not symlinked into /usr/local
+    Could not symlink sbin/distribute-exclude.sh
+    /usr/local/sbin is not writable.
+    ```
+    
+    [Homebrew: Could not symlink, /usr/local/bin is not writable
+](http://stackoverflow.com/questions/26647412/homebrew-could-not-symlink-usr-local-bin-is-not-writable)
+
+	```
+	sudo chown -R `whoami`:admin /usr/local/sbin/
+	
+	brew link hadoop
+	```
+4. Test Hadoop	
+
+    - 单机模式
+        
+        ```
+        cd /usr/local/Cellar/hadoop/2.7.3/
+        mkdir input 
+        ~~~mkdir output~~~
+        
+        cd input
+        echo 'hello world' > file1.txt
+        echo 'hello hadoop' > file2.txt
+        
+        hadoop jar ../libexec/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar wordcount ../input ../output
+        
+        more output/part-r-00000
+        ```
+        
+        ```
+        hadoop 1
+        hello 2
+        world 1
+        ```
+    
+    - 伪分布模式
+    
+        
+    
 
 
 	
