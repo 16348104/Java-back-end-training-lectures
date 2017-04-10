@@ -86,6 +86,10 @@
         - remove
         - clear
         - keySet
+        - toString
+        - containsKey
+        - containsValue
+        - contains [containsValue vs contains method of Hashtable](http://stackoverflow.com/a/25353244/3414180)
 
 ## 集合框架
 
