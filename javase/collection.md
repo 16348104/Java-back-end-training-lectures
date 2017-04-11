@@ -152,11 +152,15 @@
   - equals
   - iterator
   - listIterator
-  - subList
+  - subList [Converting a subList of an ArrayList to an ArrayList
+
+](http://stackoverflow.com/a/16644841/3414180)
   - containsAll
   - removeAll
   - removeIf `JDK 1.8`
-  - retainAll
+  - retainAll [Why retainAll in ArrayList throws an Exception
+
+](http://stackoverflow.com/a/17564823/3414180)
   
 - `LinkedList`
   
