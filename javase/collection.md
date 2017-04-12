@@ -212,11 +212,17 @@
   
 - `Hashtable`
   
+  > 无序
+
+  > `null` key `null` value
+  
   ![Hashtable](../image/javase/diagram/Hashtable.png)
   
 - `HashMap`
 
   > 无序
+  
+  > `null` key `null` value
   
   ![HashMap](../image/javase/diagram/HashMap.png)
   
