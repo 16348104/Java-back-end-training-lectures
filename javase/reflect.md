@@ -40,6 +40,11 @@ class Animals {
         System.out.println("eating " + food);
     }
     
+    // This's a private method!
+    private void killHuman() {
+        System.out.println("killed a poor guy...");
+    }
+    
     // getters and setters
 }
 ```
@@ -68,6 +73,11 @@ public class Human extends Animals {
         System.out.println(name + " is now studying " + course);
     }
 
+    // This's a private method!
+    private void killAnimals(String animal) {
+        System.out.println(name + " is now killing " + animal);
+    }
+    
     // getters and setters
 }
 ```
@@ -154,6 +164,70 @@ Human
 	double arg1
 	java.lang.String arg2
 	boolean arg3
+ */
+```
+
+6. Methods
+
+- getMethods
+
+> All the public methods up the entire class hierarchy.
+
+- `getDelcaredMethods()`
+
+> All the methods, regardless of their accessibility but only for the current class 
+
+```java
+class HumanTest {
+    public static void main(String[] args) {
+        Human human = new Human();
+        Method[] methods = human.getClass().getMethods();
+        System.out.println("--- getMethods ---");
+        for (Method method : methods) {
+            System.out.println(method);
+        }
+        Method[] declaredMethods = human.getClass().getDeclaredMethods();
+        System.out.println("--- getDeclaredMethods ---");
+        for (Method declaredMethod : declaredMethods) {
+            System.out.println(declaredMethod);
+        }
+    }
+}
+/*
+--- getMethods ---
+public java.lang.String Human.getName()
+public int Human.sleep(int)
+public void Human.setName(java.lang.String)
+public void Human.eat(java.lang.String)
+public void Human.study(java.lang.String)
+public boolean Human.isMarried()
+public void Human.setMarried(boolean)
+public void Human.setWeight(double)
+public void Human.setAge(int)
+public double Human.getWeight()
+public int Human.getAge()
+public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+public final void java.lang.Object.wait() throws java.lang.InterruptedException
+public boolean java.lang.Object.equals(java.lang.Object)
+public java.lang.String java.lang.Object.toString()
+public native int java.lang.Object.hashCode()
+public final native java.lang.Class java.lang.Object.getClass()
+public final native void java.lang.Object.notify()
+public final native void java.lang.Object.notifyAll()
+--- getDeclaredMethods ---
+public java.lang.String Human.getName()
+public int Human.sleep(int)
+public void Human.setName(java.lang.String)
+public void Human.eat(java.lang.String)
+public void Human.study(java.lang.String)
+private void Human.killAnimals(java.lang.String)
+public boolean Human.isMarried()
+public void Human.setMarried(boolean)
+public void Human.setWeight(double)
+public void Human.setAge(int)
+public double Human.getWeight()
+public int Human.getAge()
  */
 ```
 
