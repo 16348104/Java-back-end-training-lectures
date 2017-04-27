@@ -86,6 +86,10 @@
         - remove
         - clear
         - keySet
+        - toString
+        - containsKey
+        - containsValue
+        - contains [containsValue vs contains method of Hashtable](http://stackoverflow.com/a/25353244/3414180)
 
 ## 集合框架
 
@@ -148,11 +152,11 @@
   - equals
   - iterator
   - listIterator
-  - subList
+  - subList [Converting a subList of an ArrayList to an ArrayList](http://stackoverflow.com/a/16644841/3414180)
   - containsAll
   - removeAll
   - removeIf `JDK 1.8`
-  - retainAll
+  - retainAll [Why retainAll in ArrayList throws an Exception](http://stackoverflow.com/a/17564823/3414180)
   
 - `LinkedList`
   
@@ -208,11 +212,17 @@
   
 - `Hashtable`
   
+  > 无序
+
+  > `non-null` and key `non-null` value
+  
   ![Hashtable](../image/javase/diagram/Hashtable.png)
   
 - `HashMap`
 
   > 无序
+  
+  > `null` key and `null` value
   
   ![HashMap](../image/javase/diagram/HashMap.png)
   
@@ -222,6 +232,8 @@
 
   > 按元素添加顺序排序
   
+  > `null` key and `null` value  
+  
   ![LinkedHashMap](../image/javase/diagram/LinkedHashMap.png)
   
 - `TreeMap`
@@ -229,6 +241,8 @@
   > 使用 `红-黑 树` 存储元素
 
   > 按元素值排序
+
+  > `non-null` key and `null` value
   
   ![TreeMap](../image/javase/diagram/TreeMap.png)
   

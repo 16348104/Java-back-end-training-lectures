@@ -303,6 +303,8 @@
             ```java
             long l = 2147483648L;
             ```
+            
+            整形的二进制 `0b` 八进制 `0` 十六进制 `0x`
                     
             - 浮点型默认为 `double` 
 
@@ -367,13 +369,13 @@
         - &
         - |
         - ^
-        - ~
+        - ~ `非 取反`
         - <<
         - &gt;&gt;&gt; `无符号右移`
-            - `0 fill`
-        - &gt;&gt; 
-            - positive `0 fill`
-            - negative `1 fill`
+            - 补零 `0 fill`
+        - &gt;&gt; `有符号右移`
+            - 正数补零 positive `0 fill`
+            - 复数补一 negative `1 fill`
          
          > 二进制正负转换：取反加一
          
@@ -397,18 +399,19 @@
           - 强制类型转换有风险
           - `Java` 合法类型转换
             
-            > `——` 无信息丢失
+            > `——>` 无信息丢失
 
-            > `---` 可能有精度损失
+            > `-->` 可能有精度损失
+            
+            > `——>` 或 `-->` 的逆向需要强制转换
 
             ```
-            char —— int
-            byte —— short —— int
-            int —— long
-            int —— double
-            int --- float
-            long --- float
-            long --- float
+            char ——> int
+            byte ——> short ——> int ——> long
+            int ——> double
+            int --> float
+            long --> float
+            long --> float
             ```
             
         - `.` 引用
