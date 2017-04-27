@@ -27,8 +27,8 @@
 
   1. [序列化](serializable.md)
   2. [正则表达式](regex.md)
+  3. [反射](reflect.md)
   2. [内部类](inner_class.md)
-  3. 反射
   4. 注释类型
   5. NIO
   6. 多线程
