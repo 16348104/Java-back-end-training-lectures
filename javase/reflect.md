@@ -51,7 +51,7 @@ class Animals {
 
 ```java
 // sub class Human
-public class Human extends Animals {
+public final class Human extends Animals {
     public String name; // It's public!
     private boolean married;
 
@@ -107,6 +107,7 @@ class HumanTest {
         }
     }
 }
+
 /*
 --- getFields() ---
 name
@@ -150,6 +151,7 @@ class HumanTest {
         }
     }
 }
+
 /*
 --- getConstructors ---
 Human
@@ -193,19 +195,12 @@ class HumanTest {
         }
     }
 }
+
 /*
 --- getMethods ---
-public java.lang.String Human.getName()
-public int Human.sleep(int)
-public void Human.setName(java.lang.String)
-public void Human.eat(java.lang.String)
-public void Human.study(java.lang.String)
-public boolean Human.isMarried()
-public void Human.setMarried(boolean)
-public void Human.setWeight(double)
-public void Human.setAge(int)
-public double Human.getWeight()
-public int Human.getAge()
+public int java1702.javase.regex.Human.sleep(int)
+public void java1702.javase.regex.Human.study(java.lang.String)
+public void java1702.javase.regex.Human.eat(java.lang.String)
 public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
 public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
 public final void java.lang.Object.wait() throws java.lang.InterruptedException
@@ -216,18 +211,30 @@ public final native java.lang.Class java.lang.Object.getClass()
 public final native void java.lang.Object.notify()
 public final native void java.lang.Object.notifyAll()
 --- getDeclaredMethods ---
-public java.lang.String Human.getName()
-public int Human.sleep(int)
-public void Human.setName(java.lang.String)
-public void Human.eat(java.lang.String)
-public void Human.study(java.lang.String)
-private void Human.killAnimals(java.lang.String)
-public boolean Human.isMarried()
-public void Human.setMarried(boolean)
-public void Human.setWeight(double)
-public void Human.setAge(int)
-public double Human.getWeight()
-public int Human.getAge()
+public int java1702.javase.regex.Human.sleep(int)
+public void java1702.javase.regex.Human.study(java.lang.String)
+private void java1702.javase.regex.Human.killAnimals(java.lang.String)
+public void java1702.javase.regex.Human.eat(java.lang.String)
  */
 ```
+
+7. Modifiers
+
+```java
+class HumanTest {
+    public static void main(String[] args) throws NoSuchFieldException {
+        Human human = new Human();
+        System.out.println(Modifier.toString(human.getClass().getModifiers()));
+        Field field = human.getClass().getField("name");
+        System.out.println(Modifier.toString(field.getModifiers()));
+    }
+}
+
+/*
+public final
+public
+ */
+```
+
+
 
