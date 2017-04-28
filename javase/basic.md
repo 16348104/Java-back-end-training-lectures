@@ -411,7 +411,7 @@
             int ——> double
             int --> float
             long --> float
-            long --> float
+            long --> double
             ```
             
         - `.` 引用
