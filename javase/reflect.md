@@ -12,17 +12,24 @@
     - `Proxy`
     - `ReflectPermission`
 
-2. Java 类的加载
-    - 加载
-        1. 加载器：启动类加载器 `bootstrap` 自定义加载器 `user-defined`
+2. Java 类的加载机制
+    - 加载 `loading`
+        1. 加载器分类
+            - 启动类加载器 `bootstrap class loader` 
+            - 自定义加载器 `user-defined class loader`
+            - 系统类加载器 `system class loader`
         2. 过程
             - 通过一个类的全限定名来获取其定义的二进制字节流
             - 将这个字节流所代表的静态存储结构转化为方法区的运行时数据结构
-            - 在 Java 堆中生成一个代表这个类的 java.lang.Class 对象
-        3. 结果：字节码 ---> java.lang.Class 对象
+            - 在 `Java` 堆中生成一个代表这个类的 `java.lang.Class` 对象
+        3. 结果：`byte code` ---> `java.lang.Class` 对象
             
-    - 链接
-    - 初始化
+    - 链接 `linking`
+        - 验证 `verification`
+        - 准备 `preparapent`
+        - 解析 `resuolutation`
+        
+    - 初始化 `initialization`
 
 3. java.lang.Class
     - ClassName.class;
