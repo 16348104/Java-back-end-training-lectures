@@ -4,19 +4,32 @@
 
 1. java.lang.reflect
     - `AccessibleObject` 
-    - `Array` 
+    - `Array`
     - `Constructor` 
     - `Field` 
-    - `Method` 
+    - `Method`
     - `Modifier` 
-    - `Proxy` 
+    - `Proxy`
     - `ReflectPermission`
 
-2. java.lang.Class
+2. Java 类的加载
+    - 加载
+        1. 加载器：启动类加载器 `bootstrap` 自定义加载器 `user-defined`
+        2. 过程
+            - 通过一个类的全限定名来获取其定义的二进制字节流
+            - 将这个字节流所代表的静态存储结构转化为方法区的运行时数据结构
+            - 在 Java 堆中生成一个代表这个类的 java.lang.Class 对象
+        3. 结果：字节码 ---> java.lang.Class 对象
+            
+    - 链接
+    - 初始化
+
+3. java.lang.Class
     - ClassName.class;
     - instance.getClass();
+    - Class.forName(String className);
     
-3. A demo `Human` class
+4. A demo `Human` class
 
 ```java
 // super class Animals
@@ -82,7 +95,7 @@ public final class Human extends Animals {
 }
 ```
 
-4. Fields
+5. Fields
 - `getFields()`
 
 > All the public fields up the entire class hierarchy.
@@ -118,7 +131,7 @@ married
  */
 ```
 
-5. Constructors
+6. Constructors
 
 - getConstructors
 
@@ -169,7 +182,7 @@ Human
  */
 ```
 
-6. Methods
+7. Methods
 
 - getMethods
 
@@ -218,7 +231,7 @@ public void java1702.javase.regex.Human.eat(java.lang.String)
  */
 ```
 
-7. Modifiers
+8. Modifiers
 
 ```java
 class HumanTest {
