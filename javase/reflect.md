@@ -196,6 +196,21 @@
         boolean arg3
      */
     ```
+    
+    ```java
+    // constructor - object
+    Human human = null;
+    try {
+        human = (Human) constructor.newInstance(20, 60, "Tom", false);
+        System.out.println(human.getAge());
+    } catch (InstantiationException | IllegalAccessException | InvocationTargetException e) {
+        e.printStackTrace();
+    }
+ 
+    /*
+    20
+   */
+    ```
 
 7. Methods
 
