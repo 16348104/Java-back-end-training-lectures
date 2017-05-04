@@ -148,13 +148,13 @@
 
 6. Constructors
 
-- getConstructors
+    - getConstructors
 
-    > all the constructors
+        > only public constructors
 
-- getDeclaredConstructors
+    - getDeclaredConstructors
 
-    >  only public constructors
+        >  all the constructors
 
     ```java
     class HumanTest {
