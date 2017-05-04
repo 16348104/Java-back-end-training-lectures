@@ -103,13 +103,13 @@
     ```
 
 5. Fields
-- `getFields()`
+    - `getFields()`
 
-    > All the public fields up the entire class hierarchy.
+        > All the public fields up the entire class hierarchy.
 
-- `getDelcaredFields()`
+    - `getDelcaredFields()`
 
-    > All the fields, regardless of their accessibility but only for the current class 
+        > All the fields, regardless of their accessibility but only for the current class 
 
     ```java
     class HumanTest {
@@ -199,13 +199,13 @@
 
 7. Methods
 
-- getMethods
+    - getMethods
 
-    > All the public methods up the entire class hierarchy.
+        > All the public methods up the entire class hierarchy.
 
-- `getDelcaredMethods()`
+    - `getDelcaredMethods()`
 
-    > All the methods, regardless of their accessibility but only for the current class 
+        > All the methods, regardless of their accessibility but only for the current class 
 
     ```java
     class HumanTest {
