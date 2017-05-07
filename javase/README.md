@@ -25,11 +25,11 @@
 
 > 补充内容
 
-  1. [序列化](serializable.md)
-  2. [正则表达式](regex.md)
-  3. [反射](reflect.md)
-  4. [多线程](multithreading.md)
-  5. [内部类](inner_class.md)
+  1. [正则表达式](regex.md)
+  2. [反射](reflect.md)
+  3. [多线程](multithreading.md)
+  4. [内部类](inner_class.md)
+  5. [序列化](serializable.md)
   6. 注释类型
   7. NIO
   8. 网络
