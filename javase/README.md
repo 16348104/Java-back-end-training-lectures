@@ -21,7 +21,7 @@
 5. [泛型](generics.md)
 6. [异常](exception.md)
 7. [IO](io.md)
-8. 附：[练习题](exercise.md)
+8. [附:练习题](exercise.md)
 
 > 补充内容
 
