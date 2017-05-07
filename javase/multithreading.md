@@ -2,6 +2,8 @@
 
 > Java is a multi-threaded programming language
 
+<img src="../image/javase/duke-in-threads.gif" height="100">
+
 1. Process and thread
     - A process is an execution of a program and a thread is a single execution of work within the process. 
     - A process can contain multiple threads. 
@@ -15,6 +17,8 @@
     - Blocked on I/O
     - Blocked on synchronization
     - Dead
+    
+    <img src="../image/javase/thread_states.png" width="300">
     
 3. Implementation
     - Extend `Thread` class
