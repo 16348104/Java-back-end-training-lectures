@@ -28,8 +28,8 @@
   1. [序列化](serializable.md)
   2. [正则表达式](regex.md)
   3. [反射](reflect.md)
-  2. [内部类](inner_class.md)
-  4. 注释类型
-  5. NIO
-  6. 多线程
-  7. 网络
+  4. [多线程](multithreading.md)
+  5. [内部类](inner_class.md)
+  6. 注释类型
+  7. NIO
+  8. 网络
