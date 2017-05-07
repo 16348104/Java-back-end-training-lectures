@@ -20,68 +20,148 @@
     - Extend `Thread` class
         
         ```java
-        public class SubThread extends Thread {
-            @Override
-            public void run() {
-                System.out.println("SubThread...");
-            }
+        public class MT1 extends Thread {
         
             public static void main(String[] args) {
-                new SubThread().start();
+                MT1 mt1 = new MT1();
+                mt1.start();
+                System.out.println("test...");
+            }
+        
+            @Override
+            public void run() {
+                for (int i = 0; i < 10; i++) {
+                    System.out.println(i);
+                }
             }
         }
         ```
         
     - Implement `Runnable` interface
+    
         ```java
-        public class RunnableImpl implements Runnable {
-            @Override
-            public void run() {
-                System.out.println("RunnableImpl...");
+        public class MT2 implements Runnable {
+            public static void main(String[] args) {
+                MT2 mt2 = new MT2();
+                Thread thread = new Thread(mt2);
+                thread.start();
+                System.out.println("test...");
             }
         
-            public static void main(String[] args) {
-                new Thread(new RunnableImpl()).start();
+            @Override
+            public void run() {
+                for (int i = 0; i < 10; i++) {
+                    System.out.println(i);
+                }
             }
         }
         ```
+        
+4. join
 
-4. Multithreading
-    
     ```java
-    public class Multithreading implements Runnable {
+    public class MT4 implements Runnable {
     
-        @Override
-        public void run() {
+        public static void main(String[] args) {
+    
+            Thread thread = new Thread(new MT4());
+            thread.setName("thread");
+            thread.start();
+    
             try {
-                System.out.println("runnable thread: " + Thread.currentThread().getName());
-                Thread.sleep(1000 * 3);
+                thread.join();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+    
+            System.out.println("test...");
         }
     
+        @Override
+        public void run() {
+            for (int i = 0; i < 3; i++) {
+                System.out.println(Thread.currentThread().getName() + " is running...");
+                try {
+                    Thread.sleep(1000 * 3);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    ```
+    
+    ```java
+    public class MT5 implements Runnable {
+    
         public static void main(String[] args) {
-            Thread thread1 = new Thread(new Multithreading());
-            thread1.setName("thread1");
-            Thread thread2 = new Thread(new Multithreading());
-            thread2.setName("thread2");
-            SubThread thread3 = new SubThread();
-            thread3.setName("thread3");
+    
+            Thread thread1 = new Thread(new MT5());
+            thread1.setName("thread 1");
+            Thread thread2 = new Thread(new MT5());
+            thread2.setName("thread 2");
+            Thread thread3 = new Thread(new MT5());
+            thread3.setName("thread 3");
     
             thread1.start();
             thread2.start();
+    
             try {
                 thread2.join();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+    
             thread3.start();
+    
+            System.out.println("test...");
+        }
+    
+        @Override
+        public void run() {
+            for (int i = 0; i < 3; i++) {
+                System.out.println(Thread.currentThread().getName() + " is running...");
+                try {
+                    Thread.sleep(1000 * 1);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+    ```
+    
+5. yield `[jiːld] `    
+
+    ```java
+    public class MT6 implements Runnable {
+    
+        public static void main(String[] args) {
+            Thread thread1 = new Thread(new MT6());
+            thread1.setName("thread 1");
+            Thread thread2 = new Thread(new MT6());
+            thread2.setName("thread 2");
+    
+            thread1.start();
+            thread2.start();
+    
+            System.out.println("test...");
+        }
+    
+        @Override
+        public void run() {
+            for (int i = 0; i < 100; i++) {
+                System.out.println(i + ": " + Thread.currentThread().getName() + " is running...");
+                if (i % 10 == 0) {
+                    Thread.yield();
+                }
+            }
         }
     }
     ```
 
-5. Thread priority
+6. Thread priority
     - `MIN_PRIORITY` 1
     - `MAX_PRIORITY` 10
     - `NORMAL_PRIORITY` 5
@@ -114,7 +194,7 @@
     }
     ```
     
-6. Synchronization
+7. Synchronization
     - synchronization method
     - synchronization block
     
@@ -182,7 +262,7 @@
     }
     ```
     
-7. Thread safe
+8. Thread safe
     - `Vector`
     - `Stack`
     - `Hashtable`
