@@ -8,6 +8,7 @@
     - A thread is also known as a lightweight process.
 
 2. Thread lifecycle
+    - 新建 `new`
     - 就绪 `Runnable`
     - 运行 `Running`
     - 阻塞 `Blocked`
