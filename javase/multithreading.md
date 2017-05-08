@@ -8,13 +8,16 @@
     - A thread is also known as a lightweight process.
 
 2. Thread lifecycle
-    - Runnable
-    - Running
-    - Waiting
-    - Sleeping
-    - Blocked on I/O
-    - Blocked on synchronization
-    - Dead
+    - 就绪 `Runnable`
+    - 运行 `Running`
+    - 阻塞 `Blocked`
+        - 等待阻塞 `Waiting`
+        - 同步阻塞 `Blocked on synchronization`
+        - 其他阻塞
+            - I/O
+            - Sleeping
+            - join
+    -  死亡   `Dead`
     
     <img src="../image/javase/thread_states.png">
     
