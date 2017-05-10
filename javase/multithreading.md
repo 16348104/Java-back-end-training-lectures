@@ -204,6 +204,15 @@
     - synchronization method
     - synchronization block
     
+    - `synchronized` 作用域
+        - 对象 / 实例 范围
+          
+          > 一个线程只能访问一个对象的 synchronized 方法，但其他线程可以访问另一个对象的同一方法
+          
+        - 类范围
+              
+          > 一个线程只能访问一个类的一个 synchronized static 方法，对这个类的所有对象都适用
+    
     ```java
     public class Synchronization {
         public static void main(String[] args) {
