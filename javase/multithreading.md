@@ -276,8 +276,84 @@
         }
     }
     ```
+ 
+8. `wait` `notify` `notifyAll`
     
-8. Thread safe
+    >  来自 `Object` 类，线程间通讯的方式
+
+    - `wait`
+        
+        ```java
+        public final void wait() throws InterruptedException, IllegalMonitorStateException
+        ```
+    
+        - 当前线程阻塞
+        - 等待其他线程调用 `notify` 或 `notifyAll`
+        - 调用后，线程释放锁
+        - 被唤醒后，重新竞争锁
+        - 调用 `wait` 时，线程必须获得对象级别锁，即，在同步方法或同步块中
+        - 如果调用时没有锁，抛 `IllegalMonitorStateException` 运行时异常
+        
+    - `notify`
+    
+        ```java
+        public final native void notify() throws IllegalMonitorStateException
+        ```
+        
+        - 唤醒正在 wait 的线程，如有多个，挑选一个
+        - 通知后，当前线程不会马上释放锁，wait 线程不会马上获得锁，需要等待退出同步区
+        - 被唤醒的线程获得锁并执行完成，如果没有继续 notify，其他 wait 线程继续阻塞，等待被唤醒
+        - 调用 `notify` 时，线程必须获得对象级别锁，即，在同步方法或同步块中
+        - 如果调用时没有锁，抛 `IllegalMonitorStateException` 运行时异常
+        
+    - `notifyAll`
+        
+        ```java
+        public final native void notifyAll() throws IllegalMonitorStateException
+        ```
+        - 唤醒全部 wait 的线程
+        - 当前线程退出同步区时，所有被唤醒线程竞争锁
+        - 得到锁的线程执行完成同步区，其他线程继续竞争锁，知道全部执行完成
+        - 调用 `wait` 时，线程必须获得对象级别锁，即，在同步方法或同步块中
+        - 如果调用时没有锁，抛 `IllegalMonitorStateException` 运行时异常
+        
+     - 生产者与消费者问题
+        
+        > Producer-consumer problem
+        
+        > 保证生产者不会在缓冲区满时加入数据，消费者也不会在缓冲区中空时消耗数据。
+        
+        ```
+                                               +------------------+
+                                               |                  |
+                                               |                  |
+                                               |                  |
+                                               |                  |
+                                               |                  |
+                                               |                  |
+                                               |                  |
+        +----------------------------+         |                  |         +----------------------------+
+        |                            |         |                  |         |                            |
+        |                            |         |                  |         |                            |
+        |          Producer          | +-----> |      Buffer      | +-----> |         Consumer           |
+        |                            |         |                  |         |                            |
+        |                            |         |                  |         |                            |
+        |                            |         |                  |         |                            |
+        +----------------------------+         |                  |         +----------------------------+
+                                               |                  |
+                                               |                  |
+                                               |                  |
+                                               |                  |
+                                               |                  |
+                                               |                  |
+                                               +------------------+
+
+        ```
+        
+        
+        
+    
+9. Thread safe
     - `Vector`
     - `Stack`
     - `Hashtable`
