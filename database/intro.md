@@ -9,7 +9,7 @@
         - 不适于超大规模并发
 2. DBMS
   - Oracle
-  - MySQL
+  - MySQL /maɪ ˌɛskjuːˈɛl/
   - SQL Server
   - `MongoDB`
   - PostgreSQL
