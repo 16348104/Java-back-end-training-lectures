@@ -541,18 +541,10 @@ SELECT * FROM table_name;
   FROM table_name
   WHERE column_name operator value;
   ```
-  
-  |操作符|说明|
-  |---|---|
-  |=|等于|
-  |<>|不等于|
-  |!=|不等于|
-  |<|小于|
-  |<=|小于等于|
-  |>|大于|
-  |>=|大于等于|
-  |BETWEEN AND|闭区间|
 
+  - <>
+  - `BINARY`
+  
 - SQL AND & OR
 
   ```sql
