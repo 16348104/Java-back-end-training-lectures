@@ -22,8 +22,9 @@ SELECT * FROM table_name;
   */
   1;
   ```
+4. 推荐使用完全限定表名  
 
-4. 常用的 SQL 语句
+5. 常用的 SQL 语句
   
   ```sql
   SELECT - extracts data from a database
