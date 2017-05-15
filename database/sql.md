@@ -541,6 +541,17 @@ SELECT * FROM table_name;
   FROM table_name
   WHERE column_name operator value;
   ```
+  
+  |操作符|说明|
+  |---|---|
+  |=|等于|
+  |<>|不等于|
+  |!=|不等于|
+  |<|小于|
+  |<=|小于等于|
+  |>|大于|
+  |>=|大于等于|
+  |BETWEEN AND|闭区间|
 
 - SQL AND & OR
 
@@ -581,6 +592,8 @@ SELECT * FROM table_name;
   LIMIT number1 OFFSET number2;
   -- LIMIT number2, number1
   ```
+  
+  `LIMIT` 位于 `ORDER BY` 之后
   
 - SQL Like  
 
