@@ -47,7 +47,9 @@ Field  | Type        | Null | Key | Default | Comment
 DEPTNO | int(2)      | NO   | PRI | NULL    | 部门编号
 DNAME  | varchar(14) | YES  |     | NULL    | 部门名称
 LOC    | varchar(13) | YES  |     | NULL    | 所在地区
+
 > Table `salgrade` 工资级别表
+
 Field | Type    | Null | Key | Default | Comment
 -------|---------|------|-----|---------|-------
 GRADE | int(11) | YES  |     | NULL    | 工资级别
@@ -83,7 +85,9 @@ HISAL | int(11) | YES  |     | NULL    | 最高工资
 - \# 23. 至今为止，员工被雇佣的天数
 - \# 24. 找出姓名中包含 A 的员工信息
 - \# 25. 计算出员工被雇佣了多少年、多少月、多少日
+
 ## PART II
+
 - \# 1. 返回拥有员工的部门名、部门号
 - \# 2. 工资多于 scott 的员工信息
 - \# 3. 返回员工和所属经理的姓名
