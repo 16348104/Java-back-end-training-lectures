@@ -763,19 +763,21 @@ SELECT * FROM table_name;
   ```
   1. 简单视图 `updatable view`
       - `简单查询` 生成的，可以修改基表的数据
-        - 不能包含聚合函数
-        - 不能包含 `DISTINCT`
-        - 不能包含 `GROUP BY` 子句
-        - 不能包含 `HAVING` 子句
-        - 不能包含 `UNION` 或 `UNION ALL` 子句
-        - 不能包含外连接
-        - 不能包含子查询
-        - 在 `FROM` 子句中引用不可更新视图
-        - 不能仅引用文字值
-        - 不能对基表的任何列有多个引用
-        - 不能使用 `TEMPTABLE` 算法创建视图
   2. 复杂视图 `read-only view`
       - `复杂查询` 生成的，不可以修改基表的数据    
+        - 聚合函数
+        - `DISTINCT`
+        - `GROUP BY`
+        - `HAVING`
+        - `UNION` 或 `UNION ALL`
+        - `Subquery`
+        - 某些联合查询 (see additional join discussion later in this section)
+        - 在 `FROM` 子句中引用不可更新视图
+        - Subquery in the WHERE clause that refers to a table in the FROM clause
+        - 仅引用了字面值 (在此情况下，没有可以更新的表)
+        - 使用 `ALGORITHM = TEMPTABLE` 创建的视图
+        - 对基表的任何列有多个引用
+        
   3. 视图的作用
       - 数据安全性
       - 简化查询
