@@ -836,7 +836,7 @@ SELECT * FROM table_name;
     -- 创建用户
     CREATE USER your_username@'localhost' IDENTIFIED BY 'some_password';
     -- 改用户名
-    RENAME your_username TO new_your_username;
+    RENAME USER your_username@'localhost' TO new_your_username@'localhost';
     -- 更改密码
     SET PASSWORD [FOR your_username] = PASSWORD('new_your_password');
     -- 删除用户
