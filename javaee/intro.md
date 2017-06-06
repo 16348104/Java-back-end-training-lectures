@@ -18,7 +18,7 @@
     - `JSP` 和 `Servlet` 的容器
     - <a name="tomcat_install"></a>`Tomcat`
     
-        ![tomcat](../image/javaee/tomcat.png)
+        ![tomcat](../image/javaee/Tomcat-logo.svg)
         
         > [Apache Tomcat](http://tomcat.apache.org/)
 
