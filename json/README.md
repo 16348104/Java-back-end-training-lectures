@@ -1,6 +1,6 @@
 # JSON
 
-<img src="../image/json/logo_json.png" title="JSON" width="100">
+<img src="../image/json/JSON_logo.svg" title="JSON" width="100">
 
 > 教学要求
 

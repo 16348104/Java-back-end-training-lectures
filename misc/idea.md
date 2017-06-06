@@ -1,6 +1,6 @@
 # Intellij Idea  `/ɪnˈtɛlɪdʒeɪ aɪˈdɪə/`
 
-<img src="../image/idea/logo_idea.png" title="Intellij IDEA" width="100">
+<img src="../image/idea/IntelliJ_IDEA_Logo.svg" title="Intellij IDEA" width="100">
 
 > [https://www.jetbrains.com/](https://www.jetbrains.com/)
 

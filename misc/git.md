@@ -1,6 +1,6 @@
 # Git
 
-<img src="../image/git/logo_git.png" title="Git" width="100">
+<img src="../image/git/Git-logo.svg" title="Git" width="100">
 
 > [https://git-scm.com/](https://git-scm.com/)
 

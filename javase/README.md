@@ -1,6 +1,6 @@
 # Java SE
 
-<img src="../image/javase/java-logo-vector.png" title="Java SE" width="120">
+<img src="../image/javase/Java_Logo.svg" title="Java SE" width="120">
 
 > 教学要求
 
