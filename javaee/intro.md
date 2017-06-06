@@ -19,6 +19,7 @@
     - <a name="tomcat_install"></a>`Tomcat`
     
         ![tomcat](../image/javaee/Tomcat-logo.svg)
+        <img src="../image/javaee/Tomcat-logo.svg" style="height: 100px;">
         
         > [Apache Tomcat](http://tomcat.apache.org/)
 
