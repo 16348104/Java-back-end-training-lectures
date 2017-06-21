@@ -1,6 +1,6 @@
 # Bootstrap
 
-<img src="../image/bootstrap/bootstrap_log.svg" title="Bootstrap" width="100">
+<img src="../image/bootstrap/Bootstrap_logo.svg" title="Bootstrap" width="100">
 
 > 教学要求
 
