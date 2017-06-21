@@ -1,6 +1,6 @@
 # jQuery
 
-<img src="../image/jquery/logo_jquery.png" title="jQuery" height="100">
+<img src="../image/jquery/jQuery_logo.svg" title="jQuery" height="100">
 
 > 教学要求
 
