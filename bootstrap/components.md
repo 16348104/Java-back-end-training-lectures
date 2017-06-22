@@ -50,7 +50,7 @@
       </div>
       ```
     
-8. Buttons `.btn`
+8. Buttons button / input / a `.btn`
   - styles
  
     ```
@@ -82,7 +82,7 @@
   - + `.btn-group-xs`
   - + `.btn-group-vertical`
   - + `.btn-group-justified`
-    - **each** `button` wrap div with .btn-group class
+    - **each** `button` / `input` wrap div with .btn-group class
   - Dropdown Menus 
     - btn `.dropdown-toggle` `data-toggle="dropdown"`
       - span `.caret`
@@ -90,10 +90,10 @@
 
       ```html
       <div class="btn-group">
-        <button type="button" class="btn btn-primary">Apple</button>
-        <button type="button" class="btn btn-primary">Samsung</button>
+        <button class="btn btn-primary">Apple</button>
+        <button class="btn btn-primary">Samsung</button>
         <div class="btn-group">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+          <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
             Sony <span class="caret"></span>
           </button>
           <ul class="dropdown-menu" role="menu">
@@ -117,6 +117,8 @@
 12. Progress Bars 
   - outer div `.progress` 
   - inner div `.progress-bar` `style="width: 12%;"` 
+      - `.progress-bar-success` `.progress-bar-info` `.progress-bar-warning` `.progress-bar-danger`
+      - `.progress-bar-striped` `.active`
 13. Pagination 
   - ul 
       - `.pagination` + `.pagination-lg` + `.pagination-sm` 
