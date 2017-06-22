@@ -21,26 +21,26 @@
   - pre
   - `.text-muted`, `.text-primary`, `.text-success`, `.text-info`, `.text-warning`, `.text-danger`
   - `.bg-primary`, `.bg-success`, `bg-info`, `bg-warning`, `.bg-danger`
-3. Tables `.table` +`.table-striped` +`.table-borderd` +`.table-hover` `.table-condensed`
+3. Tables `.table` + `.table-striped` + `.table-borderd` + `.table-hover` `.table-condensed`
   - **Responsive Tables** div  `.table-responsive`
 4. Images `.img-rounded` `.img-circle` `.img-thumbnail`
   - **Responsive Images** `.img-responsive`
   - **Responsive Embeds** 
     - div 
-        - `.embed-responsive` `.embed-responsive-16by9` `.embed-responsive-4by3` 
+        - `.embed-responsive` + `.embed-responsive-16by9` + `.embed-responsive-4by3` 
     - iframe embed video object
         - `.embed-responsive-item`  
 5. Jumbotron `超大屏幕 - 巨幕` `.jumbotron`
   - inside container
   - outside container
-6. Wells `浅容器` div `.well` +`.well-sm` +`well-lg`
+6. Wells `浅容器` div `.well` + `.well-sm` + `well-lg`
 7. Alerts 
   - div 
-    - `.alert` +`.alert-success` +`.alert-info` +`.alert-warning` +`.alert-danger`
+    - `.alert` + `.alert-success` + `.alert-info` + `.alert-warning` + `.alert-danger`
   - link in alert
     - a `.alert-link`
   - **Closing Alerts**
-    - div +`alert-dissmissible` +`fade` +`in`
+    - div + `alert-dissmissible` + `fade` + `in`
     - a `.close` `data-dismiss="alert"`
     
       ```html
@@ -76,12 +76,12 @@
         
 9. Button Groups 
   - `.btn-group`
-  - +`.btn-group-lg`
-  - +`.btn-group-md`
-  - +`.btn-group-sm`
-  - +`.btn-group-xs`
-  - +`.btn-group-vertical`
-  - +`.btn-group-justified`
+  - + `.btn-group-lg`
+  - + `.btn-group-md`
+  - + `.btn-group-sm`
+  - + `.btn-group-xs`
+  - + `.btn-group-vertical`
+  - + `.btn-group-justified`
     - **each** `button` wrap div with .btn-group class
   - Dropdown Menus 
     - btn `.dropdown-toggle` `data-toggle="dropdown"`
@@ -107,46 +107,46 @@
 10. Glyphicons `[ɡlɪf]` `字体图标`
    - span 
       - `.glyphicon` 
-      - +`.glyphicon-*`
+      - + `.glyphicon-*`
 11. Badges / Labels `徽章` `标签` 
   - badge span 
       - `.badge`
   - label span
       - `.label` 
-      - +`.label-default, +.label-primary, .label-success, .label-info, .label-warning .label-danger`
+      - + `.label-default, +.label-primary, .label-success, .label-info, .label-warning .label-danger`
 12. Progress Bars 
   - outer div `.progress` 
   - inner div `.progress-bar` `style="width: 12%;"` 
 13. Pagination 
   - ul 
-      - `.pagination` +`.pagination-lg` +`.pagination-sm` 
+      - `.pagination` + `.pagination-lg` + `.pagination-sm` 
       - li
-          - +`.active` +`.disabled`
+          - + `.active` + `.disabled`
   - ul 
       - `.breadcrumb`
 14. Pager 
   - ul
       - `.pager` 
   - li
-      - +`.previous` +`.next`
+      - + `.previous` + `.next`
 15. List Groups 
   - ul / div 
       - `.list-group` 
   - li / a 
-      - `.list-group-item` +`.list-group-item-*` +`.active` +`.disabled`
+      - `.list-group-item` + `.list-group-item-*` + `.active` + `.disabled`
 16. Panels `面板` 
   - 1st div
       - `.panel-group`  
   - 2nd div
-      - `.panel` +`.panel-*`
+      - `.panel` + `.panel-*`
   - 3rd div
-      -  +`.panel-headind` +`.panel-body` +`.panel-footer` 
+      -  + `.panel-headind` + `.panel-body` + `.panel-footer` 
 17. Dropdowns `下拉菜单` 
   - div
       - `.dropdown` 
   - li
-      - +`divider`
-      - +`dropdown-header`
+      - + `divider`
+      - + `dropdown-header`
 
   ```html
   <div class="dropdown">
