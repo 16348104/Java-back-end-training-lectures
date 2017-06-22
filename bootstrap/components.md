@@ -36,7 +36,8 @@
 6. Wells `浅容器` div `.well` + `.well-sm` + `well-lg`
 7. Alerts 
   - div 
-    - `.alert` + `.alert-success` + `.alert-info` + `.alert-warning` + `.alert-danger`
+    - `.alert`
+    - \+ `.alert-success` + `.alert-info` + `.alert-warning` + `.alert-danger`
   - link in alert
     - a `.alert-link`
   - **Closing Alerts**
@@ -72,16 +73,17 @@
     .btn-xs
     ```
    - `.btn-block`
-   - `.active` `.disabled`
+   - `.active` 
+   - `.disabled`
         
 9. Button Groups 
   - `.btn-group`
-  - + `.btn-group-lg`
-  - + `.btn-group-md`
-  - + `.btn-group-sm`
-  - + `.btn-group-xs`
-  - + `.btn-group-vertical`
-  - + `.btn-group-justified`
+  - \+ `.btn-group-lg`
+  - \+ `.btn-group-md`
+  - \+ `.btn-group-sm`
+  - \+ `.btn-group-xs`
+  - \+ `.btn-group-vertical`
+  - \+ `.btn-group-justified`
     - **each** `button` / `input` wrap div with .btn-group class
   - Dropdown Menus 
     - btn `.dropdown-toggle` `data-toggle="dropdown"`
@@ -107,13 +109,13 @@
 10. Glyphicons `[ɡlɪf]` `字体图标`
    - span 
       - `.glyphicon` 
-      - `.glyphicon-*`
+      - \+ `.glyphicon-*`
 11. Badges / Labels `徽章` `标签` 
   - badge span 
       - `.badge`
   - label span
       - `.label` 
-      - `.label-default, +.label-primary, .label-success, .label-info, .label-warning .label-danger`
+      - \+ `.label-default, +.label-primary, .label-success, .label-info, .label-warning .label-danger`
 12. Progress Bars 
   - outer div `.progress` 
   - inner div `.progress-bar` `style="width: 12%;"` 
@@ -123,14 +125,14 @@
   - ul 
       - `.pagination` + `.pagination-lg` + `.pagination-sm` 
       - li
-          - + `.active` + `.disabled`
+          - \+ `.active` + `.disabled`
   - ul 
       - `.breadcrumb`
 14. Pager 
   - ul
       - `.pager` 
   - li
-      - + `.previous` + `.next`
+      - \+ `.previous` + `.next`
 15. List Groups 
   - ul / div 
       - `.list-group` 
@@ -142,13 +144,13 @@
   - 2nd div
       - `.panel` + `.panel-*`
   - 3rd div
-      -  + `.panel-headind` + `.panel-body` + `.panel-footer` 
+      -  \+ `.panel-headind` + `.panel-body` + `.panel-footer` 
 17. Dropdowns `下拉菜单` 
   - div
       - `.dropdown` 
   - li
-      - + `divider`
-      - + `dropdown-header`
+      - \+ `divider`
+      - \+ `dropdown-header`
 
   ```html
   <div class="dropdown">
@@ -201,7 +203,7 @@
         </a>
     </div>
   ```
-24. Modal `模态框` button `data-toggle="modal"` `data-target="#modal"` div .`modal` `.fade` `.modal-dialog` `.modal-content` `.modal-header` `.modal-body` `.modal-footer` `.close` `data-dismiss="modal"` `.modal-sm` `.modal-lg`
+24. Modal `模态框` button `data-toggle="modal"` `data-target="#modal"` div `.modal` `.fade` `.modal-dialog` `.modal-content` `.modal-header` `.modal-body` `.modal-footer` `.close` `data-dismiss="modal"` `.modal-sm` `.modal-lg`
 25. Tooltip `提示工具` `data-toggle="tooltip"` `title=""` `data-placement="top"`
 
   ```javascript
