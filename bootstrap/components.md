@@ -107,13 +107,13 @@
 10. Glyphicons `[ɡlɪf]` `字体图标`
    - span 
       - `.glyphicon` 
-      - + `.glyphicon-*`
+      - `.glyphicon-*`
 11. Badges / Labels `徽章` `标签` 
   - badge span 
       - `.badge`
   - label span
       - `.label` 
-      - + `.label-default, +.label-primary, .label-success, .label-info, .label-warning .label-danger`
+      - `.label-default, +.label-primary, .label-success, .label-info, .label-warning .label-danger`
 12. Progress Bars 
   - outer div `.progress` 
   - inner div `.progress-bar` `style="width: 12%;"` 
