@@ -302,7 +302,16 @@
     - ul `.dropdown-menu`
   - button `navbar-btn`
   - form
-    - `.navbar-form`
+    - `.navbar-form` `.navbar-left`
+  - div
+    - `.form-group` `.input-group`
+  - input
+    - `.form-control`
+  - button
+    ~~`.navbar-btn`~~
+    - `input-group-btn`
+  - i
+    - `.glyphicon` + `.glyphicon-*`
   - Collapsing Navigation Bar button `.navbar-toggle` `data-toggle="collapse"` `data-target="#navbar"` span `.icon-bar` div `collapse navbar-collapse`
   
     ```html
