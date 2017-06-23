@@ -312,8 +312,16 @@
     - `input-group-btn`
   - i
     - `.glyphicon` + `.glyphicon-*`
-  - Collapsing Navigation Bar button `.navbar-toggle` `data-toggle="collapse"` `data-target="#navbar"` span `.icon-bar` div `collapse navbar-collapse`
-  
+  - Collapsing Navigation Bar 
+    - button 
+      - `.navbar-toggle` `data-toggle="collapse"` `data-target="#navbar"` 
+    - span 
+      - `.icon-bar` 
+    - div 
+      - `.collapse` 
+      - `navbar-collapse`
+      - `id="navbar"`
+      
     ```html
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
