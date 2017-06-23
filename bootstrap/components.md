@@ -330,7 +330,19 @@
     </nav>
     ```
     
-21. Forms `.form-inline` `.form-horizontal` `.form-group` `.form-control` `.control-label` div `checkbox` `radio`
+21. Forms 
+  - form
+    - `.form-inline` `.form-horizontal` 
+  - div
+    - `.form-group` 
+  - input / textarea / select    
+    - `.form-control` 
+  - label    
+    - `.control-label` 
+    - `.col-*-`
+  - div 
+    - `.checkbox` 
+    - `.radio`
 22. Inputs `.checkbox-inline` `radio-inline` `.form-control-static` `help-block`
 23. Carousel `旋转木马` `carousel` `slide` `data-ride="carousel"` `carousel-indicators` `data-slide-to="0"` `carousel-inner` `itme` `carousel-caption` `left` `carousel-control` `data-slide="prev"`
 
