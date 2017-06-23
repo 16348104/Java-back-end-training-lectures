@@ -180,9 +180,61 @@
       - `.collapse` 
       - `.in`
   - Accordion `手风琴` `.panel-group` `data-parent="#demo"` `.panel-collapse`
-19. Tabs/Pills `list-inline` `nav` `nav-tabs` `nav-pills` `nav-stacked` `nav-justified` 
-  - pill `胶囊`
-  - Dynamic Tabs `data-toggle="tab"` `.tab-content` `.tab-pane`
+  
+  ```html
+   <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+          Collapsible Group 1</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+          Collapsible Group 2</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+          Collapsible Group 3</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.</div>
+      </div>
+    </div>
+  </div>
+  ```
+  
+19. Tabs `选项卡` / Pills `胶囊` 
+  - ul 
+    - `.list-inline` 
+    - `.nav` + `.nav-tabs` 
+    - `.nav` + `.nav-pills` + `.nav-stacked` + `.nav-justified` 
+  - Dynamic Tabs 
+    - `data-toggle="tab"` `.tab-content` `.tab-pane`
   - Dynamic Pills `data-toggle="pill"`
 20. Navbar nav `.navbar` `.navbar-default` `.navbar-inverse` `.navbar-fixed-*` `.navbar-header` `.navbar-brand` ul `.nav` `.navbar-nav` `navbar-right`
   - Collapsing Navigation Bar button `.navbar-toggle` `data-toggle="collapse"` `data-target="#navbar"` span `.icon-bar` div `collapse navbar-collapse`
@@ -191,32 +243,33 @@
 23. Carousel `旋转木马` `carousel` `slide` `data-ride="carousel"` `carousel-indicators` `data-slide-to="0"` `carousel-inner` `itme` `carousel-caption` `left` `carousel-control` `data-slide="prev"`
 
   ```html
-    <div id="carousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-            ...
-        </ol>
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="img_1.jpg" alt="Chania">
-                <div class="carousel-caption">
-                    <h3>Chania</h3>
-                    <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-                </div>
-            </div>
-            ...
-        </div>
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        </a>
-    </div>
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          ...
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+          <div class="item active">
+              <img src="img_1.jpg" alt="Chania">
+              <div class="carousel-caption">
+                  <h3>Chania</h3>
+                  <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+              </div>
+          </div>
+          ...
+      </div>
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </a>
+  </div>
   ```
+  
 24. Modal `模态框` button `data-toggle="modal"` `data-target="#modal"` div `.modal` `.fade` `.modal-dialog` `.modal-content` `.modal-header` `.modal-body` `.modal-footer` `.close` `data-dismiss="modal"` `.modal-sm` `.modal-lg`
 25. Tooltip `提示工具` `data-toggle="tooltip"` `title=""` `data-placement="top"`
 
