@@ -301,6 +301,8 @@
     - a `.dropdown-toggle` `data-toggle="dropdown"`
     - ul `.dropdown-menu`
   - button `navbar-btn`
+  - form
+    - `.navbar-form`
   - Collapsing Navigation Bar button `.navbar-toggle` `data-toggle="collapse"` `data-target="#navbar"` span `.icon-bar` div `collapse navbar-collapse`
   
     ```html
@@ -335,11 +337,12 @@
     - `.form-inline` `.form-horizontal` 
   - div
     - `.form-group` 
-  - input / textarea / select    
-    - `.form-control` 
   - label    
+    - `for=""`
     - `.control-label` 
     - `.col-*-`
+  - input / textarea / select    
+    - `.form-control` 
   - div 
     - `.checkbox` 
     - `.radio`
