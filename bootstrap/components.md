@@ -148,13 +148,20 @@
 17. Dropdowns `下拉菜单` 
   - div
       - `.dropdown` 
+  - button
+      - `.dropdown-toggle`
+      - `data-toggle="dropdown"`
+  - span
+      - `.caret`
+  - ul
+      - `.dropdown-menu`
   - li
-      - \+ `divider`
-      - \+ `dropdown-header`
+      - \+ `.divider`
+      - \+ `.dropdown-header`
 
   ```html
   <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown Example
     <span class="caret"></span></button>
     <ul class="dropdown-menu">
       <li><a href="#">HTML</a></li>
@@ -164,7 +171,14 @@
   </div>
   ```
 
-18. Collapse `折叠板` `data-toggle="collapse"` `data-target="#demo"` `.collapse` `.in`
+18. Collapse `折叠板` 
+  - button 
+      - `data-toggle="collapse"` 
+      - `data-target="#demo"` or `<a href="#demo" data-toggle...`
+  - div 
+      - `id="demo"`
+      - `.collapse` 
+      - `.in`
   - Accordion `手风琴` `.panel-group` `data-parent="#demo"` `.panel-collapse`
 19. Tabs/Pills `list-inline` `nav` `nav-tabs` `nav-pills` `nav-stacked` `nav-justified` 
   - pill `胶囊`
