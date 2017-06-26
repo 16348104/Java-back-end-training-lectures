@@ -366,12 +366,22 @@
   - label
     - `.checkbox-inline` 
     - `radio-inline` 
+  - file upload
+    
+    ```html
+    <label class="btn btn-warning">
+        <input type="file" style="display:none;">
+    </label>
+    ```
+  
   - p
     - `.form-control-static` `help-block`
   - div
     - `.input-group` `.input-group-btn`
   - sapn
     - `.input-group-addon`
+  - i
+    - `.glphicon`
 23. Carousel `旋转木马` `carousel` `slide` `data-ride="carousel"` `carousel-indicators` `data-slide-to="0"` `carousel-inner` `itme` `carousel-caption` `left` `carousel-control` `data-slide="prev"`
 
   ```html
