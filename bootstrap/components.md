@@ -353,7 +353,7 @@
   - form
     - `.form-inline` `.form-horizontal` 
   - div
-    - `.form-group` 
+    - `.form-group` `.has-success` `.has-warning` `.has-error`
   - label    
     - `for=""`
     - `.control-label` + `.col-*-`
@@ -365,7 +365,7 @@
 22. Inputs 
   - label
     - `.checkbox-inline` 
-    - `radio-inline` 
+    - `.radio-inline` 
   - file upload
     
     ```html
