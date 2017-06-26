@@ -356,14 +356,25 @@
     - `.form-group` 
   - label    
     - `for=""`
-    - `.control-label` 
-    - `.col-*-`
+    - `.control-label` + `.col-*-`
   - input / textarea / select    
     - `.form-control` 
   - div 
     - `.checkbox` 
     - `.radio`
-22. Inputs `.checkbox-inline` `radio-inline` `.form-control-static` `help-block`
+22. Inputs 
+  - checkbox
+    - `.checkbox-inline` 
+  - radio
+    - `radio-inline` 
+  - p
+    - `.form-control-static` `help-block`
+  - div
+    - `.input-group`
+  - sapn
+    - `.input-group-addon`
+  - button
+    - `.input-group-btn`
 23. Carousel `旋转木马` `carousel` `slide` `data-ride="carousel"` `carousel-indicators` `data-slide-to="0"` `carousel-inner` `itme` `carousel-caption` `left` `carousel-control` `data-slide="prev"`
 
   ```html
