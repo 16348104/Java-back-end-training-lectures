@@ -437,8 +437,9 @@
   
 25. Modal `模态框` 
 - button 
-  - `data-toggle="modal"` `data-target="#modal"` 
+  - `data-toggle="modal"` `data-target="#myModal"` 
 - div 
+  - `id="myModal"`
   - `.modal` + `.fade` 
 - div  
   - `.modal-dialog` + `.modal-sm` `.modal-lg`
@@ -447,19 +448,29 @@
 - div 
   - `.modal-header` `.modal-body` `.modal-footer` 
 - botton
-  - `.close` `data-dismiss="modal"` 
+  - `data-dismiss="modal"` 
   
-26. Tooltip `提示工具` `data-toggle="tooltip"` `title=""` `data-placement="top"`
+26. Tooltip `提示工具` 
+- a
+  - `data-toggle="tooltip"` `title=""` 
+  - `data-placement="top / botton / left / right"`
 
   ```javascript
   <script>
     $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip(); 
-    });
+    }); 
   </script>
   ```
 
-27. Popover `弹出框` `data-toggle="popover"` `title=""` `data-content=""` `data-placement="top"` `data-trigger="focus"` `data-trigger="hover"`
+27. Popover `弹出框` 
+- a
+  - `data-toggle="popover"` 
+  - `title=""` 
+  - `data-content=""` 
+  - `data-placement="top / bottom / left / right"` 
+  - `data-trigger="focus"`
+  - `data-trigger="hover"`
 
   ```javascript
   <script>
@@ -470,4 +481,7 @@
   ```
 
 28. ~~Scrollspy `滚动监听`~~
+![Bootstrap Scrollspy Plugin (Advanced)](https://www.w3schools.com/bootstrap/bootstrap_scrollspy.asp)
+
 29. ~~Affix `附加导航`~~
+![Bootstrap Affix Plugin (Advanced)](https://www.w3schools.com/bootstrap/bootstrap_affix.asp)
