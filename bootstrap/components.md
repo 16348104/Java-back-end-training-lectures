@@ -363,9 +363,8 @@
     - `.checkbox` 
     - `.radio`
 22. Inputs 
-  - checkbox
+  - label
     - `.checkbox-inline` 
-  - radio
     - `radio-inline` 
   - p
     - `.form-control-static` `help-block`
