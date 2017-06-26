@@ -326,7 +326,7 @@
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span> 
@@ -459,7 +459,7 @@
     ```javascript
     <script>
       $(document).ready(function(){
-          $('[data-toggle="tooltip"]').tooltip(); 
+          $('[data-toggle=tooltip]').tooltip(); 
       }); 
     </script>
     ```
@@ -476,7 +476,7 @@
     ```javascript
     <script>
       $(document).ready(function(){
-          $('[data-toggle="popover"]').popover(); 
+          $('[data-toggle=popover]').popover(); 
       });
     </script>
     ```
