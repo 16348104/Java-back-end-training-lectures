@@ -370,11 +370,9 @@
   - p
     - `.form-control-static` `help-block`
   - div
-    - `.input-group`
+    - `.input-group` `.input-group-btn`
   - sapn
     - `.input-group-addon`
-  - button
-    - `.input-group-btn`
 23. Carousel `旋转木马` `carousel` `slide` `data-ride="carousel"` `carousel-indicators` `data-slide-to="0"` `carousel-inner` `itme` `carousel-caption` `left` `carousel-control` `data-slide="prev"`
 
   ```html
