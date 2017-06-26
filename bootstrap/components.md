@@ -435,7 +435,20 @@
   </div>
   ```
   
-25. Modal `模态框` button `data-toggle="modal"` `data-target="#modal"` div `.modal` `.fade` `.modal-dialog` `.modal-content` `.modal-header` `.modal-body` `.modal-footer` `.close` `data-dismiss="modal"` `.modal-sm` `.modal-lg`
+25. Modal `模态框` 
+- button 
+  - `data-toggle="modal"` `data-target="#modal"` 
+- div 
+  - `.modal` + `.fade` 
+- div  
+  - `.modal-dialog` + `.modal-sm` `.modal-lg`
+- div  
+  - `.modal-content` 
+- div 
+  - `.modal-header` `.modal-body` `.modal-footer` 
+- botton
+  - `.close` `data-dismiss="modal"` 
+  
 26. Tooltip `提示工具` `data-toggle="tooltip"` `title=""` `data-placement="top"`
 
   ```javascript
