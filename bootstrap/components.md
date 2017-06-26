@@ -389,7 +389,7 @@
     - `.media-left` `media-right`
     - `.media-body`
     - `.media-heading`
-    - `.media-top` `.media-middle` `.media-botton`
+    - `.media-top` `.media-middle` `.media-bottom`
 
 24. Carousel `旋转木马` 
   - div
@@ -448,13 +448,13 @@
     - `.modal-content` 
   - div 
     - `.modal-header` `.modal-body` `.modal-footer` 
-  - botton
+  - bottom
     - `data-dismiss="modal"` 
   
 26. Tooltip `提示工具` 
   - a
     - `data-toggle="tooltip"` `title=""` 
-    - `data-placement="top / botton / left / right"`
+    - `data-placement="top / bottom / left / right"`
 
     ```javascript
     <script>
@@ -482,7 +482,9 @@
     ```
 
 28. ~~Scrollspy `滚动监听`~~
-![Bootstrap Scrollspy Plugin (Advanced)](https://www.w3schools.com/bootstrap/bootstrap_scrollspy.asp)
+
+> [Bootstrap Scrollspy Plugin (Advanced)](https://www.w3schools.com/bootstrap/bootstrap_scrollspy.asp)
 
 29. ~~Affix `附加导航`~~
-![Bootstrap Affix Plugin (Advanced)](https://www.w3schools.com/bootstrap/bootstrap_affix.asp)
+
+> [Bootstrap Affix Plugin (Advanced)](https://www.w3schools.com/bootstrap/bootstrap_affix.asp)
