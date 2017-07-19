@@ -1,12 +1,14 @@
 # Serializable 序列化和反序列化
 
-1. `java.io.Serializable` `标识接口`
+1. 序列化就是一种用来处理对象流的机制,所谓对象流也就是将对象的内容进行流化。可以对流化后的对象进行读写操作,也可将流化后的对象传输于网络之间。
+2. 序列化是为了解决在对对象流进行读写操作时所引发的问题。
+3. `java.io.Serializable` `标识接口`
   - 类通过实现 `java.io.Serializable` 接口以启用其序列化功能
   - 未实现此接口的类将无法使其任何状态序列化或反序列化
   - 可序列化类的所有子类型本身都是可序列化的
   - 序列化接口没有方法或字段，仅用于标识可序列化的语义
   - `transient`
-2. 一个模型类
+4. 一个模型类
 
   ```java
   public class User implements Serializable {
@@ -37,7 +39,7 @@
   }
   ```
     
-3. `java.io.ObjectOutputStream` 类
+5. `java.io.ObjectOutputStream` 类
   - 将 `Java` 对象写入 `OutputStream`
     
     ```java
@@ -53,7 +55,7 @@
     }
     ```
   
-4. `java.io.ObjectInputStream` 类
+6. `java.io.ObjectInputStream` 类
   - 从 `InputStream` 中重构 `Java` 对象
     
     ```java

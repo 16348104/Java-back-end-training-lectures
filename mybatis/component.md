@@ -11,7 +11,7 @@
   # user
   DROP TABLE IF EXISTS test.user;
   CREATE TABLE test.user (
-    id       INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    id       INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(255),
     password VARCHAR(255)
   );
@@ -30,7 +30,7 @@
 3. Create `model.User` model class
 
   ```java
-  public class User implements Seriable {
+  public class User implements Serializable {
       private Integer id;
       private String username;
       private String password;

@@ -128,7 +128,7 @@
 
   - bulid.gradle
   ```gradle
-  compile 'org.projectlombok:lombok:1.16.8'
+  compile 'org.projectlombok:lombok:1.16.18'
   ```
   
   - IDEA
