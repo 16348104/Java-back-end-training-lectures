@@ -2,8 +2,7 @@
 
 > [Velocity - Java Template Engine](http://velocity.apache.org/)
 
-
-<img title="Freemarker Overview" src="../image/spring/overview_freemarker.png" style="margin-left:32px; padding:10px; background:#fff">
+> Note: Starting from version 4.3, Spring does not support Velocity, and the Velocity will be be removed from Spring from version 5 (In the future).
 
 1. Edit `builde.gradle` file
 
