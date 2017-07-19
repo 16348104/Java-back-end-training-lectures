@@ -76,6 +76,7 @@
    * [IoC/DI](spring/ioc_di.md)
    * [MVC](spring/mvc.md)
    * [+Freemarker](spring/freemarker.md)
+   * [+Velocity](spring/velocity.md)
    * [练习题](spring/exercise.md)
 * [Project](project/README.md)
    * [通用组件](project/commons.md)
