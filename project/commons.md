@@ -275,6 +275,54 @@
 
         */
         ```
+        
+        ```properties
+        # 1. rootLogger: all trace debug info warn error fatal off
+        log4j.rootLogger = error, console
+
+        # log4j.logger.[namespace].[id]
+        log4j.logger.user.queryByUsername = trace
+        log4j.logger.book = debug
+
+        # 2. console appender
+        log4j.appender.console = org.apache.log4j.ConsoleAppender
+
+        #log4j.appender.file=org.apache.log4j.FileAppender
+        #log4j.appender.file.File=/Users/mingfei/Desktop/idea.log
+        #log4j.appender.file.Append=true
+
+        # mail SMTP = Simple Mail Transfer Protocol
+        #log4j.appender.MAIL=org.apache.log4j.net.SMTPAppender
+        #log4j.appender.MAIL.Threshold=trace
+        #log4j.appender.MAIL.BufferSize=1
+        #log4j.appender.MAIL.SMTPDebug=true
+        #log4j.appender.MAIL.SMTPHost=smtp.qq.com
+        #log4j.appender.MAIL.Subject=Log4J \u63D0\u9192\u60A8\uFF1A\u7CFB\u7EDF\u53D1\u751F\u4E86\u4E25\u91CD\u9519\u8BEF
+        #log4j.appender.MAIL.SMTPUsername=65775105
+        #log4j.appender.MAIL.SMTPPassword=
+        #log4j.appender.MAIL.SMTPPort=587
+        #log4j.appender.MAIL.From=65775105@qq.com
+        #log4j.appender.MAIL.To=675835357@qq.com,330286610@qq.com,32694110@qq.com,1096161287@qq.com,1291813139@qq.com,19072390@qq.com
+        #log4j.appender.MAIL.Bcc=65775105@qq.com
+
+        # 3. console layout
+        log4j.appender.console.layout = org.apache.log4j.PatternLayout
+        log4j.appender.console.layout.ConversionPattern = %d\t%p\t%c{1}\t%m%n
+
+        #log4j.appender.file.layout=org.apache.log4j.PatternLayout
+        #log4j.appender.file.layout.ConversionPattern=%d\t%p\t%c{1} : %l - %m%n
+
+        #log4j.appender.MAIL.layout=org.apache.log4j.PatternLayout
+        #log4j.appender.MAIL.layout.ConversionPattern=%d{yyy MMM dd HH:mm:ss,SSS}\t%p\t%c{1} : %l - %m%n
+
+        #登录qq邮箱
+        #进入设置
+        #进入账户
+        #点击开启 POP3/SMTP服务
+        #按照操作一步一步开启
+        #生成授权码
+        #所有程序登录都次啊用授权码登陆
+        ```
 
   3. Logback
 
