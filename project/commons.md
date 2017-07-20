@@ -440,33 +440,33 @@
   
 6. 分页查询 `基于 MyBatis`
 
-- SQL
+	- SQL
 
-	```sql
-	SELECT *
-	FROM table_name
-	LIMIT 10 OFFSET 0;
-	```
+		```sql
+		SELECT *
+		FROM table_name
+		LIMIT 10 OFFSET 0;
+		```
 
-- RowBounds
+	- RowBounds
 
-	```java
-	RowBounds rowBounds = new RowBounds(0, 10); // (offset, limit)
-	List<Book> books = sqlSession.selectList("book.queryAll", null, rowBounds);   
-	```
+		```java
+		RowBounds rowBounds = new RowBounds(0, 10); // (offset, limit)
+		List<Book> books = sqlSession.selectList("book.queryAll", null, rowBounds);   
+		```
 
-- Pagination
+	- Pagination
 		
-	```java
-	public class Pagination<T extends Serializable> implements Serializable {
-	    private List<T> list;
-	    private String statement;
-	    private int pageSize;
-	    private int totalRows;
-	    private int totalPages;
-	    private int currentPage;
+		```java
+		public class Pagination<T extends Serializable> implements Serializable {
+		    private List<T> list;
+		    private String statement;
+		    private int pageSize;
+		    private int totalRows;
+		    private int totalPages;
+		    private int currentPage;
 
-		// constructors
-		// setters & getters
-	}
-	```
+			// constructors
+			// setters & getters
+		}
+		```
