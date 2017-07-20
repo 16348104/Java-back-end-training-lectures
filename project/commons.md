@@ -171,7 +171,7 @@
 
   2. Log4j
 
-    > Log For Javaw
+    > Log For Java
 
     - build.gradle
 
