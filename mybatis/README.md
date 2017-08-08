@@ -18,4 +18,4 @@
 3. [配置](configuration.md)
 4. [XML SQL 映射](xml_sql_mapping.md)
 5. [Annotation SQL 映射](annotation_sql_mapping.md)
-6. 高级特性
+6. [Dynamic SQL](dynamic_sql.md)
