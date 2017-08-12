@@ -1,4 +1,4 @@
-# Chapter 7 JDBC
+# Chapter 8 JDBC
 
 > Java Database Connectivity
 

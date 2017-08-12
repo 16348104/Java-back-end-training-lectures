@@ -56,6 +56,7 @@
    * [JSP 隐式对象](javaee/implicit_object.md)
    * [Servlet](javaee/servlet.md)
    * [EL 和 JSTL](javaee/el_jstl.md)
+   * [自定义标记](javaee/custom_tag.md)
    * [过滤器和监听器](javaee/filter_listener.md)
    * [JDBC](javaee/jdbc.md)
    * [Server](javaee/server.md)
