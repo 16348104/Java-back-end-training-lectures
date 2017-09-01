@@ -1,6 +1,6 @@
 # Summary
 
-* [Java - Big Data Engineer Training lectures](README.md)
+* [Java - Big Data Engineer Training](README.md)
 * [HTML](html/README.md)
    * [引言](html/intro.md)
    * [核心基础](html/basic.md)
