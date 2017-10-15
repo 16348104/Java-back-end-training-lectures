@@ -107,7 +107,7 @@
 
         > All the public fields up the entire class hierarchy.
 
-    - `getDelcaredFields()`
+    - `getDeclaredFields()`
 
         > All the fields, regardless of their accessibility but only for the current class 
 
